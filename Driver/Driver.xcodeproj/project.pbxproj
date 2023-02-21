@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2960E2E829A53C9E00589B4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2960E2E729A53C9E00589B4C /* GoogleService-Info.plist */; };
 		95DC685A29A3BCF80045CC4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC685929A3BCF80045CC4F /* AppDelegate.swift */; };
 		95DC685C29A3BCF80045CC4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC685B29A3BCF80045CC4F /* SceneDelegate.swift */; };
 		95DC685E29A3BCF80045CC4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC685D29A3BCF80045CC4F /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2960E2E729A53C9E00589B4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95DC685629A3BCF80045CC4F /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC685929A3BCF80045CC4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95DC685B29A3BCF80045CC4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				95DC686229A3BCF90045CC4F /* Assets.xcassets */,
 				95DC686429A3BCF90045CC4F /* LaunchScreen.storyboard */,
 				95DC686729A3BCF90045CC4F /* Info.plist */,
+				2960E2E729A53C9E00589B4C /* GoogleService-Info.plist */,
 			);
 			path = Driver;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95DC686629A3BCF90045CC4F /* LaunchScreen.storyboard in Resources */,
+				2960E2E829A53C9E00589B4C /* GoogleService-Info.plist in Resources */,
 				95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */,
 				95DC686129A3BCF80045CC4F /* Main.storyboard in Resources */,
 			);
