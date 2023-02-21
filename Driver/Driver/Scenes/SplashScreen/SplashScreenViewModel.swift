@@ -7,12 +7,15 @@
 
 import Foundation
 
-final class SplashScreenViewModel: SplashScreenVMProtocol{
+final class SplashScreenViewModel: SplashScreenViewModelProtocol {
+    
+    // MARK: Propeties
     weak var delegate: SplashScreenViewDelegate?
     var router: SplashScreenRouterProtocol!
     
+    // MARK: Functions
     func getSomeData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             self.delegate?.handleOutput(.returnData(someData: "Done"))
         }
     }

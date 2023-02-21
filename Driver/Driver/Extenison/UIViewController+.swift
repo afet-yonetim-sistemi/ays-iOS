@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIViewController: Reusable {}
+extension UIViewController: Reusable { }
 
 extension UIViewController {
     static func loadFromNib() -> Self {

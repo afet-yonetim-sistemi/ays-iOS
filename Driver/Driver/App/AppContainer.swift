@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 let appContainer = AppContainer()
 
 final class AppContainer {

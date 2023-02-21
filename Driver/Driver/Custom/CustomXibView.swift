@@ -18,16 +18,19 @@ class CustomXibView: UIView {
         commonInit()
     }
     
-    private func commonInit (){
+    private func commonInit () {
         let view = loadViewFromNib()
-        view.frame = self.bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.backgroundColor = UIColor.clear
+        view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
-        clipsToBounds = true
-        
+        NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            view.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+            view.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor)
+        ])
     }
-    private func loadViewFromNib() -> UIView{
+    private func loadViewFromNib() -> UIView {
         let bundle =  Bundle(for: self.classForCoder)
         return UINib(nibName: Self.identifier, bundle: bundle).instantiate(withOwner: self, options: nil)[0] as! UIView
     }

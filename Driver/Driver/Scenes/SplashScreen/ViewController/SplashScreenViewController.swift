@@ -5,23 +5,26 @@
 //  Created by Fatih Doğan on 14.02.2023.
 //
 
-import UIKit
+import UIKit.UIViewController
 /**
 Splash Screen View Controller
 */
-class SplashScreenViewController: UIViewController {
-    var viewModel: SplashScreenVMProtocol!
+final class SplashScreenViewController: UIViewController {
+    
+    // MARK: Properties
+    var viewModel: SplashScreenViewModelProtocol!
+    
+    // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.getSomeData()
     }
-    
 }
 extension SplashScreenViewController: SplashScreenViewDelegate {
     
     ///  Handle output return from view model
     /// - Parameter output: Splash Screen View Model Output
-    func handleOutput(_ output: SplashScreenVMOutput) {
+    func handleOutput(_ output: SplashScreenViewModelOutput) {
         switch output {
         case .returnData(let someData):
             if let data = someData as? String {
@@ -30,6 +33,4 @@ extension SplashScreenViewController: SplashScreenViewDelegate {
             }
         }
     }
-    
-    
 }

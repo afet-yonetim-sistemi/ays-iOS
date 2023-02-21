@@ -7,4 +7,4 @@
 
 import UIKit
 
-extension UIView: Reusable{}
+extension UIView: Reusable { }

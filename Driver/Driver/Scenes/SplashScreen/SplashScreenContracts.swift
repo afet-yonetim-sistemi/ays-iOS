@@ -9,28 +9,26 @@ import Foundation
 
 ///  View Delegate
 protocol SplashScreenViewDelegate: AnyObject {
-    func handleOutput(_ output: SplashScreenVMOutput)
+    func handleOutput(_ output: SplashScreenViewModelOutput)
 }
 
 ///  View Model Protocol
-protocol SplashScreenVMProtocol: AnyObject {
+protocol SplashScreenViewModelProtocol: AnyObject {
     var delegate: SplashScreenViewDelegate? { get set }
     func getSomeData()
     func nextPage()
 }
 
-
 /// View Model Output
-enum SplashScreenVMOutput{
+enum SplashScreenViewModelOutput {
     case returnData(someData: Any)
 }
 
-
 /// Router Protocol
 protocol SplashScreenRouterProtocol: AnyObject {
-    func routeToPage(_ routes: TradeRoutes)
+    func routeToPage(_ routes: SplashScreenRoutes)
    }
 
-   enum TradeRoutes {
+enum SplashScreenRoutes {
        case nextPage
    }

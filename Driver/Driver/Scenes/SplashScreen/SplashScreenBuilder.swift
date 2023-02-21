@@ -5,9 +5,9 @@
 //  Created by Fatih Doğan on 14.02.2023.
 //
 
-import UIKit
+import UIKit.UIViewController
 
-final class SplashScreenBuilder{
+final class SplashScreenBuilder {
     static func make() -> UIViewController {
         let viewController = SplashScreenViewController.loadFromNib()
         let viewModel = SplashScreenViewModel()
