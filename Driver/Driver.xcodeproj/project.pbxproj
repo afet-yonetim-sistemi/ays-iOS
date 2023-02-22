@@ -27,6 +27,16 @@
 		2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E129A5178B00589B4C /* HomeViewRouter.swift */; };
 		2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E329A5183F00589B4C /* HomeViewModel.swift */; };
 		2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */; };
+		2960E2F129A6555700589B4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2EF29A6555700589B4C /* LoginViewController.swift */; };
+		2960E2F229A6555700589B4C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2960E2F029A6555700589B4C /* LoginViewController.xib */; };
+		2960E2F429A6557500589B4C /* LoginViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2F329A6557500589B4C /* LoginViewBuilder.swift */; };
+		2960E2F629A6558000589B4C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2F529A6558000589B4C /* LoginViewModel.swift */; };
+		2960E2F829A6559B00589B4C /* LoginViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2F729A6559B00589B4C /* LoginViewRouter.swift */; };
+		2960E2FA29A655AE00589B4C /* LoginViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2F929A655AE00589B4C /* LoginViewContracts.swift */; };
+		2960E2FC29A6951600589B4C /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2960E2FB29A6951600589B4C /* Color.xcassets */; };
+		2960E2FE29A6953A00589B4C /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2FD29A6953A00589B4C /* UIColor+.swift */; };
+		2960E30029A697B400589B4C /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2FF29A697B400589B4C /* GenericError.swift */; };
+		2960E30329A699A600589B4C /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E30229A699A600589B4C /* Animator.swift */; };
 		95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DC686229A3BCF90045CC4F /* Assets.xcassets */; };
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
 		95DC687B29A3BCF90045CC4F /* DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687A29A3BCF90045CC4F /* DriverUITests.swift */; };
@@ -71,6 +81,16 @@
 		2960E2E129A5178B00589B4C /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
 		2960E2E329A5183F00589B4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		2960E2EF29A6555700589B4C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2960E2F029A6555700589B4C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		2960E2F329A6557500589B4C /* LoginViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewBuilder.swift; sourceTree = "<group>"; };
+		2960E2F529A6558000589B4C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2960E2F729A6559B00589B4C /* LoginViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewRouter.swift; sourceTree = "<group>"; };
+		2960E2F929A655AE00589B4C /* LoginViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewContracts.swift; sourceTree = "<group>"; };
+		2960E2FB29A6951600589B4C /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		2960E2FD29A6953A00589B4C /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		2960E2FF29A697B400589B4C /* GenericError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		2960E30229A699A600589B4C /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		95DC685629A3BCF80045CC4F /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC686229A3BCF90045CC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DC686729A3BCF90045CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				2960E2B229A4114000589B4C /* SplashScreen */,
+				2960E2ED29A6550F00589B4C /* LoginScreen */,
 				2960E2BA29A4114000589B4C /* HomeScreen */,
 			);
 			path = Scenes;
@@ -165,6 +186,7 @@
 				2960E2C329A4114000589B4C /* Reusable.swift */,
 				2960E2C429A4114000589B4C /* UIView+.swift */,
 				2960E2C529A4114000589B4C /* UIViewController+.swift */,
+				2960E2FD29A6953A00589B4C /* UIColor+.swift */,
 			);
 			path = Extenison;
 			sourceTree = "<group>";
@@ -173,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				2960E2C729A4114000589B4C /* CustomXibView.swift */,
+				2960E2FF29A697B400589B4C /* GenericError.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -181,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				95DC686229A3BCF90045CC4F /* Assets.xcassets */,
+				2960E2FB29A6951600589B4C /* Color.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -192,6 +216,35 @@
 				2960E2BC29A4114000589B4C /* HomeViewController.xib */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		2960E2ED29A6550F00589B4C /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2960E2EE29A6553F00589B4C /* ViewController */,
+				2960E2F529A6558000589B4C /* LoginViewModel.swift */,
+				2960E2F329A6557500589B4C /* LoginViewBuilder.swift */,
+				2960E2F729A6559B00589B4C /* LoginViewRouter.swift */,
+				2960E2F929A655AE00589B4C /* LoginViewContracts.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		2960E2EE29A6553F00589B4C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2960E2EF29A6555700589B4C /* LoginViewController.swift */,
+				2960E2F029A6555700589B4C /* LoginViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2960E30129A6999900589B4C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2960E30229A699A600589B4C /* Animator.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		95DC684D29A3BCF80045CC4F = {
@@ -218,9 +271,10 @@
 			isa = PBXGroup;
 			children = (
 				2960E2BD29A4114000589B4C /* App */,
+				2960E2B129A4114000589B4C /* Scenes */,
 				2960E2C629A4114000589B4C /* Custom */,
 				2960E2C229A4114000589B4C /* Extenison */,
-				2960E2B129A4114000589B4C /* Scenes */,
+				2960E30129A6999900589B4C /* Helper */,
 				2960E2D829A4115800589B4C /* Resources */,
 				95DC686729A3BCF90045CC4F /* Info.plist */,
 			);
@@ -348,7 +402,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2960E2F229A6555700589B4C /* LoginViewController.xib in Resources */,
 				95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */,
+				2960E2FC29A6951600589B4C /* Color.xcassets in Resources */,
 				2960E2CF29A4114000589B4C /* HomeViewController.xib in Resources */,
 				2960E2CC29A4114000589B4C /* SplashScreenViewController.xib in Resources */,
 			);
@@ -375,22 +431,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2960E2F629A6558000589B4C /* LoginViewModel.swift in Sources */,
 				2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */,
 				2960E2D529A4114000589B4C /* UIView+.swift in Sources */,
 				2960E2DC29A4123900589B4C /* SceneDelegate.swift in Sources */,
 				2960E2C929A4114000589B4C /* SplashScreenBuilder.swift in Sources */,
+				2960E2F129A6555700589B4C /* LoginViewController.swift in Sources */,
 				2960E2D429A4114000589B4C /* Reusable.swift in Sources */,
 				2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */,
+				2960E2FA29A655AE00589B4C /* LoginViewContracts.swift in Sources */,
 				2960E2D129A4114000589B4C /* AppContainer.swift in Sources */,
+				2960E2F429A6557500589B4C /* LoginViewBuilder.swift in Sources */,
 				2960E2E029A516DF00589B4C /* HomeViewContracts.swift in Sources */,
 				2960E2CB29A4114000589B4C /* SplashScreenViewModel.swift in Sources */,
+				2960E30029A697B400589B4C /* GenericError.swift in Sources */,
 				2960E2CA29A4114000589B4C /* SplashScreenContracts.swift in Sources */,
 				2960E2CE29A4114000589B4C /* HomeViewController.swift in Sources */,
 				2960E2D629A4114000589B4C /* UIViewController+.swift in Sources */,
+				2960E2F829A6559B00589B4C /* LoginViewRouter.swift in Sources */,
+				2960E2FE29A6953A00589B4C /* UIColor+.swift in Sources */,
 				2960E2DA29A4123200589B4C /* AppDelegate.swift in Sources */,
 				2960E2D029A4114000589B4C /* AppRouter.swift in Sources */,
 				2960E2D729A4114000589B4C /* CustomXibView.swift in Sources */,
 				2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */,
+				2960E30329A699A600589B4C /* Animator.swift in Sources */,
 				2960E2CD29A4114000589B4C /* SplashScreenViewController.swift in Sources */,
 				2960E2C829A4114000589B4C /* SplashScreenRouter.swift in Sources */,
 			);
