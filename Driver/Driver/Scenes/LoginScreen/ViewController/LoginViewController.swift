@@ -37,7 +37,7 @@ extension LoginViewController: LoginViewDelegate {
         case .error(let errorDescription):
             showAlert(alertType: .caution, for: errorDescription, actionName: "Tamam")
         case .setSpinner(let isLoading):
-            isLoading ? Animator.sharedInstance.showAnimation(viewController: self) : Animator.sharedInstance.hideAnimation()
+            isLoading ? Animator.shared.showAnimation(viewController: self) : Animator.shared.hideAnimation()
         case .loginSuccesfully:
             viewModel.navigateHomeView()
         }
