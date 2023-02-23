@@ -15,7 +15,7 @@ final class SplashScreenRouter: SplashScreenRouterProtocol {
     // MARK: Functions
     func routeToPage(_ routes: SplashScreenRoutes) {
         guard let viewController = viewController as? UIViewController else { return }
-        let homeViewController = HomeViewBuilder.make()
-        viewController.present(homeViewController, animated: true)
+        let loginViewController = LoginViewBuilder.make()
+        viewController.present(loginViewController, animated: true)
     }
 }
