@@ -9,7 +9,7 @@ import UIKit
 
 final class Animator {
     static let shared = Animator()
-    var transparentView = UIImageView()
+    var transparentView = UIView()
     var indicator = UIActivityIndicatorView()
     
     private init() {
