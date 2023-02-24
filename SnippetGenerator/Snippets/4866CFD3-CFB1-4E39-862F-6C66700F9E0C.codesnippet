@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jazzy</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+Write purpose of method here.
+ Example: This function calculates the sum of two numbers
+## Important Notes ##
+Write important note of method here.
+ Example: 1. Both parameters are **Integer** numbers.
+- parameters:
+Write parameters here.
+Example below.
+-a: Integer one
+- b: Integer two
+- returns: Write returns here. Example: Added sum of two integers
+*/</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4866CFD3-CFB1-4E39-862F-6C66700F9E0C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>jazzy - function definition</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
