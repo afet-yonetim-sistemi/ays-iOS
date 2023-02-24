@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+
+
+DIR="~/Library/Developer/Xcode/Templates/Custom"
+
+if [ ! -d "$DIR" ]; then
+
+mkdir ~/Library/Developer/Xcode/Templates/Custom
+
+fi
+
+
+cd $(dirname "$0")
+cp -R MVVM-Router.xctemplate ~/Library/Developer/Xcode/Templates/Custom
