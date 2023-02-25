@@ -19,11 +19,11 @@ final class LoginViewController: BaseViewController {
     // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        userNameTextField.delegate = self
+        passwordTextField.delegate = self
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        userNameTextField.delegate = self
-        passwordTextField.delegate = self
         userNameTextField.becomeFirstResponder()
     }
     // MARK: Functions

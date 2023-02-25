@@ -23,7 +23,7 @@
 		2960E2D729A4114000589B4C /* CustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2C729A4114000589B4C /* CustomXibView.swift */; };
 		2960E2DA29A4123200589B4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2D929A4123200589B4C /* AppDelegate.swift */; };
 		2960E2DC29A4123900589B4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2DB29A4123900589B4C /* SceneDelegate.swift */; };
-		2960E2E029A516DF00589B4C /* HomeViewProtocolts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2DF29A516DF00589B4C /* HomeViewProtocolts.swift */; };
+		2960E2E029A516DF00589B4C /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2DF29A516DF00589B4C /* HomeViewProtocols.swift */; };
 		2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E129A5178B00589B4C /* HomeViewRouter.swift */; };
 		2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E329A5183F00589B4C /* HomeViewModel.swift */; };
 		2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */; };
@@ -79,7 +79,7 @@
 		2960E2C729A4114000589B4C /* CustomXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomXibView.swift; sourceTree = "<group>"; };
 		2960E2D929A4123200589B4C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2960E2DB29A4123900589B4C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2960E2DF29A516DF00589B4C /* HomeViewProtocolts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocolts.swift; sourceTree = "<group>"; };
+		2960E2DF29A516DF00589B4C /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
 		2960E2E129A5178B00589B4C /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
 		2960E2E329A5183F00589B4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 			children = (
 				2960E2DD29A5168B00589B4C /* HomeViewController */,
 				2960E2E329A5183F00589B4C /* HomeViewModel.swift */,
-				2960E2DF29A516DF00589B4C /* HomeViewProtocolts.swift */,
+				2960E2DF29A516DF00589B4C /* HomeViewProtocols.swift */,
 				2960E2E129A5178B00589B4C /* HomeViewRouter.swift */,
 				2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */,
 			);
@@ -449,7 +449,7 @@
 				2960E2D429A4114000589B4C /* Reusable.swift in Sources */,
 				2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */,
 				2960E2D129A4114000589B4C /* AppContainer.swift in Sources */,
-				2960E2E029A516DF00589B4C /* HomeViewProtocolts.swift in Sources */,
+				2960E2E029A516DF00589B4C /* HomeViewProtocols.swift in Sources */,
 				2960E31729A7841300589B4C /* LoginViewModel.swift in Sources */,
 				2960E31A29A7841300589B4C /* LoginViewController.swift in Sources */,
 				2960E2CB29A4114000589B4C /* SplashScreenViewModel.swift in Sources */,

@@ -40,7 +40,8 @@ final class Animator {
         }
     }
     func hideAnimation() {
-        DispatchQueue.main.async( execute: {
+        DispatchQueue.main.async( execute: { [weak self] in
+            guard let self else { return }
             self.transparentView.removeFromSuperview()
             self.indicator.removeFromSuperview()
         })
