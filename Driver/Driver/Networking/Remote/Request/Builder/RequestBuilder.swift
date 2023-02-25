@@ -1,6 +1,6 @@
 //
 //  RequestBuilder.swift
-//  News
+//  AfetYönetimSistemi
 //
 //  Created by Tolga Taner on 3.06.2021.
 //
