@@ -6,7 +6,7 @@
 //
 
 import Foundation
-/// This is a class to contain utility methods
+
 protocol Reusable {
   static var identifier: String { get }
 }
