@@ -12,7 +12,11 @@ final class LoginViewRouter: LoginRouterProtocol {
     // MARK: Properties
     weak var viewController: LoginViewDelegate?
     
-    // MARK: Functions
+    /**
+     LoginViewModel presents other view controllers via this method
+     - parameters:
+     - routes: LoginRoutes
+     */
     func routeToPage(_ routes: LoginRoutes) {
         guard let viewController = viewController as? UIViewController else { return }
         let homeViewController = HomeViewBuilder.make()

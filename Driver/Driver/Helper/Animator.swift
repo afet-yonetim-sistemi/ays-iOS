@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// This is a class to contain a activty indicator layer
 final class Animator {
     static let shared = Animator()
     var transparentView = UIView()
@@ -24,6 +25,11 @@ final class Animator {
             indicator.style = UIActivityIndicatorView.Style.large
         }
     }
+    /**
+     This method is used to show a transparent view with activty indicator
+     - parameters:
+     -viewController: UIViewController
+     */
     func showAnimation(viewController: UIViewController) {
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
@@ -39,6 +45,9 @@ final class Animator {
             controller.view.bringSubviewToFront(self.indicator)
         }
     }
+    /**
+     This method is used to hide activty indicator
+     */
     func hideAnimation() {
         DispatchQueue.main.async( execute: { [weak self] in
             guard let self else { return }

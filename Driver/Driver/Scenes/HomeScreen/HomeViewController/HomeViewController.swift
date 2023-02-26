@@ -7,7 +7,7 @@
 
 import UIKit.UIViewController
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: BaseViewController {
     
     // MARK: Properties
     var viewModel: HomeViewModelProtocol!

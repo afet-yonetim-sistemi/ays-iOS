@@ -32,6 +32,15 @@ final class LoginViewController: BaseViewController {
     }
 }
 extension LoginViewController: LoginViewDelegate {
+    /**
+     handleOutput triggered by viewmodel
+     ## Important Notes ##
+     Error: For handle any kind error,
+     Set Spinner: For show or hide animator class(kind of activity indicator)
+     Login Successfully: After network layer authenticate user
+     - parameters:
+     -outputs: LoginViewModelOutput
+     */
     func handleOutput(_ output: LoginViewModelOutput) {
         switch output {
         case .error(let errorDescription):
@@ -56,6 +65,7 @@ extension LoginViewController: UITextFieldDelegate {
 }
 extension LoginViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
 }

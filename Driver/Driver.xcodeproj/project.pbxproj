@@ -228,9 +228,9 @@
 			isa = PBXGroup;
 			children = (
 				2960E31229A7841300589B4C /* ViewController */,
-				2960E30F29A7841300589B4C /* LoginProtocols.swift */,
 				2960E31029A7841300589B4C /* LoginViewModel.swift */,
 				2960E31129A7841300589B4C /* LoginViewBuilder.swift */,
+				2960E30F29A7841300589B4C /* LoginProtocols.swift */,
 				2960E31529A7841300589B4C /* LoginViewRouter.swift */,
 			);
 			path = LoginScreen;
