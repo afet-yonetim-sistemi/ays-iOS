@@ -16,9 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             appContainer.router.start()
         }
+       
+        /**
+         Here, according to the Bool value returned in the .isJailbroken function of the JailbreakChecker Class, the device is authorized to enter or the device is blocked.
+         */
+        let jailbreakChecker = JailbreakChecker()
+        if jailbreakChecker.isJailbroken() == false {
+            print("Non-jailbroken device detected")
+        } else {
+            print("Jailbroken device detected")
+            exit(0)
+        }
         return true
     }
-
     // MARK: UISceneSession Lifecycle
     @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

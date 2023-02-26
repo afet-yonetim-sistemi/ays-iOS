@@ -27,6 +27,7 @@
 		2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E129A5178B00589B4C /* HomeViewRouter.swift */; };
 		2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E329A5183F00589B4C /* HomeViewModel.swift */; };
 		2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */; };
+		5CD901B729AB69930086DD51 /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD901B629AB69930086DD51 /* JailbreakChecker.swift */; };
 		95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DC686229A3BCF90045CC4F /* Assets.xcassets */; };
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
 		95DC687B29A3BCF90045CC4F /* DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687A29A3BCF90045CC4F /* DriverUITests.swift */; };
@@ -71,6 +72,7 @@
 		2960E2E129A5178B00589B4C /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
 		2960E2E329A5183F00589B4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		5CD901B629AB69930086DD51 /* JailbreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakChecker.swift; sourceTree = "<group>"; };
 		95DC685629A3BCF80045CC4F /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC686229A3BCF90045CC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DC686729A3BCF90045CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				2960E2C329A4114000589B4C /* Reusable.swift */,
 				2960E2C429A4114000589B4C /* UIView+.swift */,
 				2960E2C529A4114000589B4C /* UIViewController+.swift */,
+				5CD901B629AB69930086DD51 /* JailbreakChecker.swift */,
 			);
 			path = Extenison;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */,
 				2960E2D529A4114000589B4C /* UIView+.swift in Sources */,
 				2960E2DC29A4123900589B4C /* SceneDelegate.swift in Sources */,
+				5CD901B729AB69930086DD51 /* JailbreakChecker.swift in Sources */,
 				2960E2C929A4114000589B4C /* SplashScreenBuilder.swift in Sources */,
 				2960E2D429A4114000589B4C /* Reusable.swift in Sources */,
 				2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */,
