@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295EEAEC29ABDB6400068844 /* DriverLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295EEAEB29ABDB6400068844 /* DriverLog.swift */; };
 		2960E2C829A4114000589B4C /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B329A4114000589B4C /* SplashScreenRouter.swift */; };
 		2960E2C929A4114000589B4C /* SplashScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B429A4114000589B4C /* SplashScreenBuilder.swift */; };
 		2960E2CA29A4114000589B4C /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B529A4114000589B4C /* SplashScreenProtocols.swift */; };
@@ -63,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		295EEAEB29ABDB6400068844 /* DriverLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLog.swift; sourceTree = "<group>"; };
 		2960E2B329A4114000589B4C /* SplashScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
 		2960E2B429A4114000589B4C /* SplashScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenBuilder.swift; sourceTree = "<group>"; };
 		2960E2B529A4114000589B4C /* SplashScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenProtocols.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				2960E2C729A4114000589B4C /* CustomXibView.swift */,
 				2960E32729A7DC2B00589B4C /* BaseViewController.swift */,
 				2960E32929A7DCF700589B4C /* AlertType.swift */,
+				295EEAEB29ABDB6400068844 /* DriverLog.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				2960E31729A7841300589B4C /* LoginViewModel.swift in Sources */,
 				2960E31A29A7841300589B4C /* LoginViewController.swift in Sources */,
 				2960E2CB29A4114000589B4C /* SplashScreenViewModel.swift in Sources */,
+				295EEAEC29ABDB6400068844 /* DriverLog.swift in Sources */,
 				2960E2CA29A4114000589B4C /* SplashScreenProtocols.swift in Sources */,
 				2960E2CE29A4114000589B4C /* HomeViewController.swift in Sources */,
 				2960E2D629A4114000589B4C /* UIViewController+.swift in Sources */,

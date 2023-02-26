@@ -11,10 +11,10 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("View did load:", Self.identifier)
+        DriverLog.print("View did load: \(Self.identifier) ")
     }
     deinit {
-        print("View deinit:", Self.identifier)
+        DriverLog.print("View deinit: \(Self.identifier) ")
     }
     func showAlert(alertType: AlertType , for description: String, actionName: String, action: ((UIAlertAction) -> Void)? = nil) {
         let alertView = UIAlertController(title: alertType.rawValue, message: description, preferredStyle: .alert)
