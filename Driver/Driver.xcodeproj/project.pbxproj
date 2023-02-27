@@ -27,6 +27,8 @@
 		2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E129A5178B00589B4C /* HomeViewRouter.swift */; };
 		2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E329A5183F00589B4C /* HomeViewModel.swift */; };
 		2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */; };
+		29F265F529AD329800319B06 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29F265F429AD329800319B06 /* Settings.bundle */; };
+		29F265F829AD3F6E00319B06 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F265F729AD3F6E00319B06 /* AppEnvironment.swift */; };
 		377F4E9C49931B85A298F6AB /* Pods_DriverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF153E52437106642CA448F /* Pods_DriverTests.framework */; };
 		8EFBF20ADE9BBED25D9C75E1 /* Pods_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D54BB878FA08497F426A53 /* Pods_Driver.framework */; };
 		9583A16429A97AA6000DFE48 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9583A16329A97AA6000DFE48 /* Environment.swift */; };
@@ -82,6 +84,8 @@
 		2960E2E129A5178B00589B4C /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
 		2960E2E329A5183F00589B4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
+		29F265F429AD329800319B06 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		29F265F729AD3F6E00319B06 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		3AF153E52437106642CA448F /* Pods_DriverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4414D799539C3F8D77D0DCC3 /* Pods-DriverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverTests.debug.xcconfig"; path = "Target Support Files/Pods-DriverTests/Pods-DriverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70D54BB878FA08497F426A53 /* Pods_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				95DC686229A3BCF90045CC4F /* Assets.xcassets */,
+				29F265F429AD329800319B06 /* Settings.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -223,6 +228,14 @@
 				2960E2BC29A4114000589B4C /* HomeViewController.xib */,
 			);
 			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		29F265F629AD3F5B00319B06 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				29F265F729AD3F6E00319B06 /* AppEnvironment.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		2E018126A6BB6989B7D81959 /* Frameworks */ = {
@@ -245,7 +258,6 @@
 				4414D799539C3F8D77D0DCC3 /* Pods-DriverTests.debug.xcconfig */,
 				9072C0F06AAFB4000452ED0A /* Pods-DriverTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -358,6 +370,7 @@
 				2960E2C629A4114000589B4C /* Custom */,
 				2960E2C229A4114000589B4C /* Extension */,
 				2960E2B129A4114000589B4C /* Scenes */,
+				29F265F629AD3F5B00319B06 /* Helper */,
 				2960E2D829A4115800589B4C /* Resources */,
 				95DC686729A3BCF90045CC4F /* Info.plist */,
 			);
@@ -490,6 +503,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F265F529AD329800319B06 /* Settings.bundle in Resources */,
 				95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */,
 				2960E2CF29A4114000589B4C /* HomeViewController.xib in Resources */,
 				2960E2CC29A4114000589B4C /* SplashScreenViewController.xib in Resources */,
@@ -637,6 +651,7 @@
 				95A9F71129A915F4005710CA /* RequestBuilder.swift in Sources */,
 				95A9F71029A915F4005710CA /* Request.swift in Sources */,
 				2960E2DA29A4123200589B4C /* AppDelegate.swift in Sources */,
+				29F265F829AD3F6E00319B06 /* AppEnvironment.swift in Sources */,
 				2960E2D029A4114000589B4C /* AppRouter.swift in Sources */,
 				2960E2D729A4114000589B4C /* CustomXibView.swift in Sources */,
 				2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */,
