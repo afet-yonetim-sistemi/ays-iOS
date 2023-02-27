@@ -5,14 +5,11 @@
 //  Created by Turan Çabuk on 26.02.2023.
 //
 
-import Foundation
-
-import UIKit
 
 import UIKit
 
 /// This class contains functions that check whether the device that wants to login to the application has a jailbreak or not.
-class JailbreakChecker {
+final class JailbreakChecker {
     
     /**
      This function checks whether the device that wants to login contains jailbreak libraries and returns a Bool value.
@@ -38,9 +35,21 @@ class JailbreakChecker {
     }
     func performAction() {
         if isJailbroken() {
-            print("Unable to operate on jailbroken device")
+            alertOnJailbrokenPhone()
             return
         }
-        // Resume on non-jailbroken device
+    }
+    /**
+     UIAlert has been created to be displayed to the user on jailbroken devices.
+     */
+    func alertOnJailbrokenPhone() {
+        let alertJailbrokenPhone = UIAlertController(title: "Error", message: "You are using a jailbroken device. Please use a non-jailbroken device to continue using this app.", preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.default) { _ in
+            exit(0)
+        }
+        alertJailbrokenPhone.addAction(okButton)
+        if let window = UIApplication.shared.windows.first, let rootViewController = window.rootViewController {
+            rootViewController.present(alertJailbrokenPhone, animated: true, completion: nil)
+        }
     }
 }
