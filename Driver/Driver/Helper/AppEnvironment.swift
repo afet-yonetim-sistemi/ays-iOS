@@ -21,15 +21,14 @@ enum AppEnvironment: String {
         }
     }
     
-    static var selected: AppEnvironment {
+    private static var selected: AppEnvironment {
          /**
           Production is default value for fail safe
           */
-             let defaultValue = AppEnvironment.production
-             if let environment = UserDefaults.standard.string(forKey: "environment") {
-               return AppEnvironment(rawValue: environment) ?? defaultValue
-             }
-             return defaultValue
+        guard let environment = UserDefaults.standard.string(forKey: "environment") else {
+            return .production
+        }
+        return AppEnvironment(rawValue: environment) ?? .production
     }
     #warning("Fatih: We must change default host and scheme after service url deploy")
     static var host: String {
