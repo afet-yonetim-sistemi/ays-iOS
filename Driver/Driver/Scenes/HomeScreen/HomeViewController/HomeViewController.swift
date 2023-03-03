@@ -8,6 +8,12 @@
 import UIKit.UIViewController
 
 final class HomeViewController: UIViewController {
+    // MARK: Outlets
+    @IBOutlet weak var settingsButton: CustomReusableButtonView!
+    @IBOutlet weak var roadStatusButton: CustomReusableButtonView!
+    @IBOutlet weak var maydayButton: CustomReusableButtonView!
+    @IBOutlet weak var statusButton: CustomReusableButtonView!
+    
     
     // MARK: Properties
     var viewModel: HomeViewModelProtocol!
@@ -15,7 +21,22 @@ final class HomeViewController: UIViewController {
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setButtons()
+    }
+    
+    private func setButtons() {
+        settingsButton.configureButton(title: "Ayarlar", imageName: "gear") { [weak self] in
+            self?.viewModel.buttonPressed(type: .settings)
+        }
+        roadStatusButton.configureButton(title: "Yol Durumu", imageName: "road") {[weak self] in
+            self?.viewModel.buttonPressed(type: .roadStatus)
+        }
+        maydayButton.configureButton(title: "Yardım Çağır", imageName: "help") {[weak self] in
+            self?.viewModel.buttonPressed(type: .help)
+        }
+        statusButton.configureButton(title: "Durum", imageName: "status") {[weak self] in
+            self?.viewModel.buttonPressed(type: .status)
+        }
     }
 }
 extension HomeViewController: HomeViewDelegate {

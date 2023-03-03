@@ -2,14 +2,19 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="YonetimSistemi" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="Driver" customModuleProvider="target">
             <connections>
+                <outlet property="maydayButton" destination="1iC-fP-CYx" id="HeJ-DY-QEX"/>
+                <outlet property="roadStatusButton" destination="WUX-AW-6YY" id="V5u-xr-H7k"/>
+                <outlet property="settingsButton" destination="JgO-kq-0RO" id="LzO-uA-g3b"/>
+                <outlet property="statusButton" destination="2ZC-b2-rCD" id="U6g-re-nzB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,12 +27,40 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <standardMapConfiguration key="preferredConfiguration"/>
                 </mapView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="hUg-E5-wOD">
+                    <rect key="frame" x="288" y="493" width="90" height="310"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgO-kq-0RO" customClass="CustomReusableButtonView" customModule="Driver" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="90" height="60.333333333333336"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-AW-6YY" customClass="CustomReusableButtonView" customModule="Driver" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="83.333333333333371" width="90" height="60.333333333333343"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iC-fP-CYx" customClass="CustomReusableButtonView" customModule="Driver" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="166.66666666666663" width="90" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZC-b2-rCD" customClass="CustomReusableButtonView" customModule="Driver" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="249.66666666666666" width="90" height="60.333333333333343"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="310" id="exX-OU-hZA"/>
+                        <constraint firstAttribute="width" constant="90" id="xPN-do-f5i"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <constraints>
                 <constraint firstItem="ftC-Mt-W9p" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="13v-tw-sD6"/>
                 <constraint firstAttribute="bottom" secondItem="ftC-Mt-W9p" secondAttribute="bottom" id="Dv1-zn-1tI"/>
                 <constraint firstItem="ftC-Mt-W9p" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="HPN-uZ-Xpr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hUg-E5-wOD" secondAttribute="trailing" constant="15" id="N1V-pB-GVn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="hUg-E5-wOD" secondAttribute="bottom" constant="15" id="tfO-9N-mIY"/>
                 <constraint firstItem="ftC-Mt-W9p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uXj-JG-bfo"/>
             </constraints>
             <point key="canvasLocation" x="127.48091603053435" y="-12.67605633802817"/>
