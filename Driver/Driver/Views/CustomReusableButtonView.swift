@@ -8,7 +8,7 @@
 import UIKit
 
 /// This is a class to contain custom reusable button view
-class CustomReusableButtonView: CustomXibView {
+final class CustomReusableButtonView: CustomXibView {
     // MARK: Outlets
     @IBOutlet private weak var reusableButtonImage: UIImageView!
     @IBOutlet private weak var reusableButtonTitle: UILabel!

@@ -1,5 +1,5 @@
 //
-//  UIImageView+.swift
+//  UIImageView+Extension.swift
 //  Driver
 //
 //  Created by Fatih Doğan on 3.03.2023.
