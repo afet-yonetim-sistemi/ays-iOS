@@ -47,6 +47,7 @@
 		95BEC25D29B4D7AD00E463B2 /* LoginViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC25729B4D7AD00E463B2 /* LoginViewRouter.swift */; };
 		95BEC25F29B4D7E800E463B2 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC25E29B4D7E800E463B2 /* Animator.swift */; };
 		95BEC26129B4D89D00E463B2 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC26029B4D89D00E463B2 /* GenericError.swift */; };
+		95BEC26329B4D96300E463B2 /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC26229B4D96300E463B2 /* JailbreakChecker.swift */; };
 		95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DC686229A3BCF90045CC4F /* Assets.xcassets */; };
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
 		95DC687B29A3BCF90045CC4F /* DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687A29A3BCF90045CC4F /* DriverUITests.swift */; };
@@ -115,6 +116,7 @@
 		95BEC25729B4D7AD00E463B2 /* LoginViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewRouter.swift; sourceTree = "<group>"; };
 		95BEC25E29B4D7E800E463B2 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		95BEC26029B4D89D00E463B2 /* GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
+		95BEC26229B4D96300E463B2 /* JailbreakChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JailbreakChecker.swift; path = Driver/Helper/JailbreakChecker.swift; sourceTree = SOURCE_ROOT; };
 		95DC685629A3BCF80045CC4F /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC686229A3BCF90045CC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DC686729A3BCF90045CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 		29F265F629AD3F5B00319B06 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				95BEC26229B4D96300E463B2 /* JailbreakChecker.swift */,
 				95BEC25E29B4D7E800E463B2 /* Animator.swift */,
 				29F265F729AD3F6E00319B06 /* AppEnvironment.swift */,
 			);
@@ -709,6 +712,7 @@
 				95A9F71329A915F4005710CA /* Endpoint.swift in Sources */,
 				95BEC25A29B4D7AD00E463B2 /* LoginViewBuilder.swift in Sources */,
 				95A9F71429A915F4005710CA /* APIError.swift in Sources */,
+				95BEC26329B4D96300E463B2 /* JailbreakChecker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
