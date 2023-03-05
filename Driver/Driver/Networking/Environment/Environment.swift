@@ -8,6 +8,6 @@
 import Foundation
 /// This is a struct to contain scheme and host depends on the environment.
 struct Environment {
-    var scheme: String = String()
-    var host: String = String()
+    var scheme: String = AppEnvironment.scheme
+    var host: String = AppEnvironment.host
 }
