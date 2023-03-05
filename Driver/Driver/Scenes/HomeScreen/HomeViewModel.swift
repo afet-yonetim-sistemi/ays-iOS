@@ -12,4 +12,9 @@ final class HomeViewModel: HomeViewModelProtocol {
     // MARK: Propeties
     weak var delegate: HomeViewDelegate?
     var router: HomeViewRouterProtocol!
+    
+    func buttonPressed(type: HomeViewButtons) {
+        
+    }
+    
 }

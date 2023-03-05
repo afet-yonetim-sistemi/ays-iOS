@@ -1,5 +1,5 @@
 //
-//  UIViewController.swift
+//  UIViewController+Extension.swift
 //  AfetYönetimSistemi
 //
 //  Created by Fatih Doğan on 14.02.2023.

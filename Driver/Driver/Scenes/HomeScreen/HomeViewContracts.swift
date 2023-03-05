@@ -15,6 +15,7 @@ protocol HomeViewDelegate: AnyObject {
 ///  View Model Protocol
 protocol HomeViewModelProtocol: AnyObject {
     var delegate: HomeViewDelegate? { get set }
+    func buttonPressed(type: HomeViewButtons )
 }
 
 /// View Model Output
@@ -26,3 +27,7 @@ protocol HomeViewRouterProtocol: AnyObject {
    }
 
 enum HomeViewRoutes { }
+
+enum HomeViewButtons {
+    case roadStatus, help, status, settings
+}
