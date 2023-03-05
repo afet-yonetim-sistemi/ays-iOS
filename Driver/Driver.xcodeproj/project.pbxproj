@@ -37,6 +37,9 @@
 		95A9F71429A915F4005710CA /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9F70429A915F4005710CA /* APIError.swift */; };
 		95A9F71529A915F4005710CA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9F70529A915F4005710CA /* Model.swift */; };
 		95A9F71629A915F4005710CA /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A9F70629A915F4005710CA /* APIClient.swift */; };
+		95BEC23F29B3A56500E463B2 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC23E29B3A56500E463B2 /* StateManager.swift */; };
+		95BEC24129B3B2DF00E463B2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC24029B3B2DF00E463B2 /* LocationManager.swift */; };
+		95BEC24429B3B44600E463B2 /* LocationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC24329B3B44600E463B2 /* LocationProtocol.swift */; };
 		95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DC686229A3BCF90045CC4F /* Assets.xcassets */; };
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
 		95DC687B29A3BCF90045CC4F /* DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687A29A3BCF90045CC4F /* DriverUITests.swift */; };
@@ -95,6 +98,9 @@
 		95A9F70429A915F4005710CA /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		95A9F70529A915F4005710CA /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		95A9F70629A915F4005710CA /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		95BEC23E29B3A56500E463B2 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		95BEC24029B3B2DF00E463B2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		95BEC24329B3B44600E463B2 /* LocationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProtocol.swift; sourceTree = "<group>"; };
 		95DC685629A3BCF80045CC4F /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC686229A3BCF90045CC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DC686729A3BCF90045CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -245,7 +251,6 @@
 				4414D799539C3F8D77D0DCC3 /* Pods-DriverTests.debug.xcconfig */,
 				9072C0F06AAFB4000452ED0A /* Pods-DriverTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -328,6 +333,24 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
+		95BEC23D29B3A46F00E463B2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				95BEC24229B3B43B00E463B2 /* Location */,
+				95BEC23E29B3A56500E463B2 /* StateManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		95BEC24229B3B43B00E463B2 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				95BEC24029B3B2DF00E463B2 /* LocationManager.swift */,
+				95BEC24329B3B44600E463B2 /* LocationProtocol.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		95DC684D29A3BCF80045CC4F = {
 			isa = PBXGroup;
 			children = (
@@ -353,6 +376,7 @@
 		95DC685829A3BCF80045CC4F /* Driver */ = {
 			isa = PBXGroup;
 			children = (
+				95BEC23D29B3A46F00E463B2 /* Util */,
 				2960E2BD29A4114000589B4C /* App */,
 				95A9F6F729A915F4005710CA /* Networking */,
 				2960E2C629A4114000589B4C /* Custom */,
@@ -638,13 +662,16 @@
 				95A9F71029A915F4005710CA /* Request.swift in Sources */,
 				2960E2DA29A4123200589B4C /* AppDelegate.swift in Sources */,
 				2960E2D029A4114000589B4C /* AppRouter.swift in Sources */,
+				95BEC23F29B3A56500E463B2 /* StateManager.swift in Sources */,
 				2960E2D729A4114000589B4C /* CustomXibView.swift in Sources */,
 				2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */,
 				2960E2CD29A4114000589B4C /* SplashScreenViewController.swift in Sources */,
 				9583A16429A97AA6000DFE48 /* Environment.swift in Sources */,
 				2960E2C829A4114000589B4C /* SplashScreenRouter.swift in Sources */,
+				95BEC24129B3B2DF00E463B2 /* LocationManager.swift in Sources */,
 				95A9F71229A915F4005710CA /* Builder.swift in Sources */,
 				95A9F71329A915F4005710CA /* Endpoint.swift in Sources */,
+				95BEC24429B3B44600E463B2 /* LocationProtocol.swift in Sources */,
 				95A9F71429A915F4005710CA /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
