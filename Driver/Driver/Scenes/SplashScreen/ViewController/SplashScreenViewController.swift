@@ -7,9 +7,9 @@
 
 import UIKit.UIViewController
 /**
- Splash Screen View Controller
- */
-final class SplashScreenViewController: UIViewController {
+Splash Screen View Controller
+*/
+final class SplashScreenViewController: BaseViewController {
     
     // MARK: Properties
     var viewModel: SplashScreenViewModelProtocol!
@@ -36,7 +36,6 @@ extension SplashScreenViewController: SplashScreenViewDelegate {
         switch output {
         case .returnData(let someData):
             if let data = someData as? String {
-                print(data)
                 viewModel.nextPage()
             }
         }
