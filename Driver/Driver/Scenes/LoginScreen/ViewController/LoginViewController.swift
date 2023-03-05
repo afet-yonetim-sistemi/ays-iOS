@@ -7,11 +7,11 @@
 
 import UIKit.UIViewController
 
-final class LoginViewController: UIViewController {
+final class LoginViewController: BaseViewController {
     
     // MARK: Outlets
-    @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet private weak var userNameTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
     
     // MARK: Properties
     var viewModel: LoginViewModelProtocol!
@@ -21,30 +21,35 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         userNameTextField.delegate = self
         passwordTextField.delegate = self
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         userNameTextField.becomeFirstResponder()
     }
-    
     // MARK: Functions
     @IBAction private func loginButtonPressed(_ sender: UIButton) {
         viewModel.login(userName: userNameTextField.text, password: passwordTextField.text)
     }
 }
 extension LoginViewController: LoginViewDelegate {
+    /**
+     handleOutput triggered by viewmodel
+     ## Important Notes ##
+     Error: For handle any kind error,
+     Set Spinner: For show or hide animator class(kind of activity indicator)
+     Login Successfully: After network layer authenticate user
+     - parameters:
+     -outputs: LoginViewModelOutput
+     */
     func handleOutput(_ output: LoginViewModelOutput) {
         switch output {
         case .error(let errorDescription):
-            showError(for: errorDescription)
+            showAlert(alertType: .caution, for: errorDescription, actionName: "Tamam")
         case .setSpinner(let isLoading):
-            isLoading ? Animator.sharedInstance.showAnimation() : Animator.sharedInstance.hideAnimation()
+            isLoading ? Animator.shared.showAnimation(viewController: self) : Animator.shared.hideAnimation()
         case .loginSuccesfully:
             viewModel.navigateHomeView()
         }
-    }
-    private func showError(for description: String) {
-        let alertView = UIAlertController(title: "Uyarı", message: description, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Tamam", style: .cancel)
-        alertView.addAction(cancelAction)
-        present(alertView, animated: true)
     }
 }
 extension LoginViewController: UITextFieldDelegate {
@@ -60,6 +65,7 @@ extension LoginViewController: UITextFieldDelegate {
 }
 extension LoginViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
 }

@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		295EEAEC29ABDB6400068844 /* DriverLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295EEAEB29ABDB6400068844 /* DriverLog.swift */; };
 		2960E2C829A4114000589B4C /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B329A4114000589B4C /* SplashScreenRouter.swift */; };
 		2960E2C929A4114000589B4C /* SplashScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B429A4114000589B4C /* SplashScreenBuilder.swift */; };
-		2960E2CA29A4114000589B4C /* SplashScreenContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B529A4114000589B4C /* SplashScreenContracts.swift */; };
+		2960E2CA29A4114000589B4C /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B529A4114000589B4C /* SplashScreenProtocols.swift */; };
 		2960E2CB29A4114000589B4C /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B629A4114000589B4C /* SplashScreenViewModel.swift */; };
 		2960E2CC29A4114000589B4C /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2960E2B829A4114000589B4C /* SplashScreenViewController.xib */; };
 		2960E2CD29A4114000589B4C /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2B929A4114000589B4C /* SplashScreenViewController.swift */; };
@@ -23,7 +24,7 @@
 		2960E2D729A4114000589B4C /* CustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2C729A4114000589B4C /* CustomXibView.swift */; };
 		2960E2DA29A4123200589B4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2D929A4123200589B4C /* AppDelegate.swift */; };
 		2960E2DC29A4123900589B4C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2DB29A4123900589B4C /* SceneDelegate.swift */; };
-		2960E2E029A516DF00589B4C /* HomeViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2DF29A516DF00589B4C /* HomeViewContracts.swift */; };
+		2960E2E029A516DF00589B4C /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2DF29A516DF00589B4C /* HomeViewProtocols.swift */; };
 		2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E129A5178B00589B4C /* HomeViewRouter.swift */; };
 		2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E329A5183F00589B4C /* HomeViewModel.swift */; };
 		2960E2E629A518DC00589B4C /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */; };
@@ -73,9 +74,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		295EEAEB29ABDB6400068844 /* DriverLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverLog.swift; sourceTree = "<group>"; };
 		2960E2B329A4114000589B4C /* SplashScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
 		2960E2B429A4114000589B4C /* SplashScreenBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenBuilder.swift; sourceTree = "<group>"; };
-		2960E2B529A4114000589B4C /* SplashScreenContracts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenContracts.swift; sourceTree = "<group>"; };
+		2960E2B529A4114000589B4C /* SplashScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenProtocols.swift; sourceTree = "<group>"; };
 		2960E2B629A4114000589B4C /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 		2960E2B829A4114000589B4C /* SplashScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		2960E2B929A4114000589B4C /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
@@ -89,7 +91,7 @@
 		2960E2C729A4114000589B4C /* CustomXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomXibView.swift; sourceTree = "<group>"; };
 		2960E2D929A4123200589B4C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2960E2DB29A4123900589B4C /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2960E2DF29A516DF00589B4C /* HomeViewContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContracts.swift; sourceTree = "<group>"; };
+		2960E2DF29A516DF00589B4C /* HomeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocols.swift; sourceTree = "<group>"; };
 		2960E2E129A5178B00589B4C /* HomeViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRouter.swift; sourceTree = "<group>"; };
 		2960E2E329A5183F00589B4C /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewBuilder.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				95BEC25029B4D7AD00E463B2 /* LoginScreen */,
 				2960E2B229A4114000589B4C /* SplashScreen */,
+				2960E30E29A7841300589B4C /* LoginScreen */,
 				2960E2BA29A4114000589B4C /* HomeScreen */,
 			);
 			path = Scenes;
@@ -176,7 +179,7 @@
 				2960E2B629A4114000589B4C /* SplashScreenViewModel.swift */,
 				2960E2B329A4114000589B4C /* SplashScreenRouter.swift */,
 				2960E2B429A4114000589B4C /* SplashScreenBuilder.swift */,
-				2960E2B529A4114000589B4C /* SplashScreenContracts.swift */,
+				2960E2B529A4114000589B4C /* SplashScreenProtocols.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -195,7 +198,7 @@
 			children = (
 				2960E2DD29A5168B00589B4C /* HomeViewController */,
 				2960E2E329A5183F00589B4C /* HomeViewModel.swift */,
-				2960E2DF29A516DF00589B4C /* HomeViewContracts.swift */,
+				2960E2DF29A516DF00589B4C /* HomeViewProtocols.swift */,
 				2960E2E129A5178B00589B4C /* HomeViewRouter.swift */,
 				2960E2E529A518DC00589B4C /* HomeViewBuilder.swift */,
 			);
@@ -218,6 +221,7 @@
 			children = (
 				2960E2C329A4114000589B4C /* Reusable.swift */,
 				2960E2C429A4114000589B4C /* UIView+.swift */,
+				2960E31E29A7842500589B4C /* UIColor+.swift */,
 				2960E2C529A4114000589B4C /* UIViewController+.swift */,
 			);
 			path = Extension;
@@ -228,6 +232,9 @@
 			children = (
 				95BEC26029B4D89D00E463B2 /* GenericError.swift */,
 				2960E2C729A4114000589B4C /* CustomXibView.swift */,
+				2960E32729A7DC2B00589B4C /* BaseViewController.swift */,
+				2960E32929A7DCF700589B4C /* AlertType.swift */,
+				295EEAEB29ABDB6400068844 /* DriverLog.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -235,6 +242,7 @@
 		2960E2D829A4115800589B4C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2960E31C29A7841D00589B4C /* Color.xcassets */,
 				95DC686229A3BCF90045CC4F /* Assets.xcassets */,
 				29F265F429AD329800319B06 /* Settings.bundle */,
 			);
@@ -408,6 +416,7 @@
 		95DC685829A3BCF80045CC4F /* Driver */ = {
 			isa = PBXGroup;
 			children = (
+				2960E32029A7843800589B4C /* Helper */,
 				2960E2BD29A4114000589B4C /* App */,
 				95A9F6F729A915F4005710CA /* Networking */,
 				2960E2C629A4114000589B4C /* Custom */,
@@ -549,6 +558,7 @@
 				95BEC25B29B4D7AD00E463B2 /* LoginViewController.xib in Resources */,
 				29F265F529AD329800319B06 /* Settings.bundle in Resources */,
 				95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */,
+				2960E31D29A7841D00589B4C /* Color.xcassets in Resources */,
 				2960E2CF29A4114000589B4C /* HomeViewController.xib in Resources */,
 				2960E2CC29A4114000589B4C /* SplashScreenViewController.xib in Resources */,
 			);
@@ -680,6 +690,8 @@
 			files = (
 				95A9F71529A915F4005710CA /* Model.swift in Sources */,
 				2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */,
+				2960E31829A7841300589B4C /* LoginViewBuilder.swift in Sources */,
+				2960E31B29A7841300589B4C /* LoginViewRouter.swift in Sources */,
 				2960E2D529A4114000589B4C /* UIView+.swift in Sources */,
 				2960E2DC29A4123900589B4C /* SceneDelegate.swift in Sources */,
 				95BEC25829B4D7AD00E463B2 /* LoginViewContracts.swift in Sources */,
@@ -690,9 +702,12 @@
 				2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */,
 				95BEC25F29B4D7E800E463B2 /* Animator.swift in Sources */,
 				2960E2D129A4114000589B4C /* AppContainer.swift in Sources */,
-				2960E2E029A516DF00589B4C /* HomeViewContracts.swift in Sources */,
+				2960E2E029A516DF00589B4C /* HomeViewProtocols.swift in Sources */,
+				2960E31729A7841300589B4C /* LoginViewModel.swift in Sources */,
+				2960E31A29A7841300589B4C /* LoginViewController.swift in Sources */,
 				2960E2CB29A4114000589B4C /* SplashScreenViewModel.swift in Sources */,
-				2960E2CA29A4114000589B4C /* SplashScreenContracts.swift in Sources */,
+				295EEAEC29ABDB6400068844 /* DriverLog.swift in Sources */,
+				2960E2CA29A4114000589B4C /* SplashScreenProtocols.swift in Sources */,
 				2960E2CE29A4114000589B4C /* HomeViewController.swift in Sources */,
 				95BEC25C29B4D7AD00E463B2 /* LoginViewController.swift in Sources */,
 				95A9F71629A915F4005710CA /* APIClient.swift in Sources */,

@@ -8,6 +8,7 @@
 import UIKit.UIColor
 
 extension UIColor {
-    class var appBlue: UIColor {
-        UIColor(named: "AppBlue")! }
+    static var appBlue: UIColor {
+        UIColor(named: "AppBlue") ?? UIColor(red: 31 / 255.0, green: 42 / 255.0, blue: 61/255.0, alpha: 1.0)
+    }
 }
