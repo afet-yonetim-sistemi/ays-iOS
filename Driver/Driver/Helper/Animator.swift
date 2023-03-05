@@ -20,7 +20,7 @@ final class Animator {
         transparentView.alpha = 0.5
         indicator.center = transparentView.center
         indicator.startAnimating()
-        indicator.color = .appBlue
+        indicator.color = .blue
         if #available(iOS 13.0, *) {
             indicator.style = UIActivityIndicatorView.Style.large
         }

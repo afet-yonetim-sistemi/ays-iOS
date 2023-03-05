@@ -49,6 +49,9 @@
 		95BEC25F29B4D7E800E463B2 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC25E29B4D7E800E463B2 /* Animator.swift */; };
 		95BEC26129B4D89D00E463B2 /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC26029B4D89D00E463B2 /* GenericError.swift */; };
 		95BEC26329B4D96300E463B2 /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC26229B4D96300E463B2 /* JailbreakChecker.swift */; };
+		95BEC26529B4DAE700E463B2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC26429B4DAE700E463B2 /* BaseViewController.swift */; };
+		95BEC26729B4DB0000E463B2 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC26629B4DB0000E463B2 /* AlertType.swift */; };
+		95BEC26929B4DB1400E463B2 /* LocalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BEC26829B4DB1400E463B2 /* LocalError.swift */; };
 		95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DC686229A3BCF90045CC4F /* Assets.xcassets */; };
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
 		95DC687B29A3BCF90045CC4F /* DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687A29A3BCF90045CC4F /* DriverUITests.swift */; };
@@ -119,6 +122,9 @@
 		95BEC25E29B4D7E800E463B2 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		95BEC26029B4D89D00E463B2 /* GenericError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericError.swift; sourceTree = "<group>"; };
 		95BEC26229B4D96300E463B2 /* JailbreakChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JailbreakChecker.swift; path = Driver/Helper/JailbreakChecker.swift; sourceTree = SOURCE_ROOT; };
+		95BEC26429B4DAE700E463B2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		95BEC26629B4DB0000E463B2 /* AlertType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		95BEC26829B4DB1400E463B2 /* LocalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalError.swift; sourceTree = "<group>"; };
 		95DC685629A3BCF80045CC4F /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC686229A3BCF90045CC4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DC686729A3BCF90045CC4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,7 +172,6 @@
 			children = (
 				95BEC25029B4D7AD00E463B2 /* LoginScreen */,
 				2960E2B229A4114000589B4C /* SplashScreen */,
-				2960E30E29A7841300589B4C /* LoginScreen */,
 				2960E2BA29A4114000589B4C /* HomeScreen */,
 			);
 			path = Scenes;
@@ -221,7 +226,6 @@
 			children = (
 				2960E2C329A4114000589B4C /* Reusable.swift */,
 				2960E2C429A4114000589B4C /* UIView+.swift */,
-				2960E31E29A7842500589B4C /* UIColor+.swift */,
 				2960E2C529A4114000589B4C /* UIViewController+.swift */,
 			);
 			path = Extension;
@@ -230,10 +234,11 @@
 		2960E2C629A4114000589B4C /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				95BEC26629B4DB0000E463B2 /* AlertType.swift */,
+				95BEC26429B4DAE700E463B2 /* BaseViewController.swift */,
 				95BEC26029B4D89D00E463B2 /* GenericError.swift */,
 				2960E2C729A4114000589B4C /* CustomXibView.swift */,
-				2960E32729A7DC2B00589B4C /* BaseViewController.swift */,
-				2960E32929A7DCF700589B4C /* AlertType.swift */,
+				95BEC26829B4DB1400E463B2 /* LocalError.swift */,
 				295EEAEB29ABDB6400068844 /* DriverLog.swift */,
 			);
 			path = Custom;
@@ -242,7 +247,6 @@
 		2960E2D829A4115800589B4C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2960E31C29A7841D00589B4C /* Color.xcassets */,
 				95DC686229A3BCF90045CC4F /* Assets.xcassets */,
 				29F265F429AD329800319B06 /* Settings.bundle */,
 			);
@@ -416,7 +420,6 @@
 		95DC685829A3BCF80045CC4F /* Driver */ = {
 			isa = PBXGroup;
 			children = (
-				2960E32029A7843800589B4C /* Helper */,
 				2960E2BD29A4114000589B4C /* App */,
 				95A9F6F729A915F4005710CA /* Networking */,
 				2960E2C629A4114000589B4C /* Custom */,
@@ -558,7 +561,6 @@
 				95BEC25B29B4D7AD00E463B2 /* LoginViewController.xib in Resources */,
 				29F265F529AD329800319B06 /* Settings.bundle in Resources */,
 				95DC686329A3BCF90045CC4F /* Assets.xcassets in Resources */,
-				2960E31D29A7841D00589B4C /* Color.xcassets in Resources */,
 				2960E2CF29A4114000589B4C /* HomeViewController.xib in Resources */,
 				2960E2CC29A4114000589B4C /* SplashScreenViewController.xib in Resources */,
 			);
@@ -690,8 +692,6 @@
 			files = (
 				95A9F71529A915F4005710CA /* Model.swift in Sources */,
 				2960E2E429A5183F00589B4C /* HomeViewModel.swift in Sources */,
-				2960E31829A7841300589B4C /* LoginViewBuilder.swift in Sources */,
-				2960E31B29A7841300589B4C /* LoginViewRouter.swift in Sources */,
 				2960E2D529A4114000589B4C /* UIView+.swift in Sources */,
 				2960E2DC29A4123900589B4C /* SceneDelegate.swift in Sources */,
 				95BEC25829B4D7AD00E463B2 /* LoginViewContracts.swift in Sources */,
@@ -701,10 +701,10 @@
 				95BEC26129B4D89D00E463B2 /* GenericError.swift in Sources */,
 				2960E2E229A5178B00589B4C /* HomeViewRouter.swift in Sources */,
 				95BEC25F29B4D7E800E463B2 /* Animator.swift in Sources */,
+				95BEC26529B4DAE700E463B2 /* BaseViewController.swift in Sources */,
+				95BEC26729B4DB0000E463B2 /* AlertType.swift in Sources */,
 				2960E2D129A4114000589B4C /* AppContainer.swift in Sources */,
 				2960E2E029A516DF00589B4C /* HomeViewProtocols.swift in Sources */,
-				2960E31729A7841300589B4C /* LoginViewModel.swift in Sources */,
-				2960E31A29A7841300589B4C /* LoginViewController.swift in Sources */,
 				2960E2CB29A4114000589B4C /* SplashScreenViewModel.swift in Sources */,
 				295EEAEC29ABDB6400068844 /* DriverLog.swift in Sources */,
 				2960E2CA29A4114000589B4C /* SplashScreenProtocols.swift in Sources */,
@@ -716,6 +716,7 @@
 				95A9F71029A915F4005710CA /* Request.swift in Sources */,
 				2960E2DA29A4123200589B4C /* AppDelegate.swift in Sources */,
 				29F265F829AD3F6E00319B06 /* AppEnvironment.swift in Sources */,
+				95BEC26929B4DB1400E463B2 /* LocalError.swift in Sources */,
 				2960E2D029A4114000589B4C /* AppRouter.swift in Sources */,
 				2960E2D729A4114000589B4C /* CustomXibView.swift in Sources */,
 				95BEC25929B4D7AD00E463B2 /* LoginViewModel.swift in Sources */,
