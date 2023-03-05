@@ -7,8 +7,8 @@
 
 import UIKit.UIViewController
 /**
-Splash Screen View Controller
-*/
+ Splash Screen View Controller
+ */
 final class SplashScreenViewController: UIViewController {
     
     // MARK: Properties
@@ -18,6 +18,14 @@ final class SplashScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.getSomeData()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        /// In the control, the device with jailbreak is given an alert and it is prevented from entering the application.
+        let jailbreakCheker = JailbreakChecker()
+        if !jailbreakCheker.isJailbroken() {
+            jailbreakCheker.performAction()
+        }
     }
 }
 extension SplashScreenViewController: SplashScreenViewDelegate {
