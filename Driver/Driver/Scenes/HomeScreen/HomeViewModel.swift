@@ -12,15 +12,15 @@ final class HomeViewModel: HomeViewModelProtocol {
     // MARK: Propeties
     weak var delegate: HomeViewDelegate?
     var router: HomeViewRouterProtocol!
-    var stateManager: StateManager!
+    var stateManager: ApplicationStateManager!
     
     init() {
-        stateManager = StateManager(delegate: self)
+        stateManager = ApplicationStateManager(delegate: self)
     }
 }
 //MARK: - StateManagerDelegate
-extension HomeViewModel: StateManagerDelegate {
-    func appStateDidChanged(_ state: StateManager.State) {
+extension HomeViewModel: ApplicationStateManagerDelegate {
+    func appStateDidChanged(_ state: ApplicationStateManager.State) {
         
     }
 }

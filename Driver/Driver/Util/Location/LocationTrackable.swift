@@ -1,5 +1,5 @@
 //
-//  LocationProtocol.swift
+//  LocationTrackable.swift
 //  Driver
 //
 //  Created by Tolga Taner on 4.03.2023.
@@ -9,17 +9,16 @@ import Foundation
 import CoreLocation
 import MapKit
 
-protocol UserLocationProtocol: AnyObject {
+protocol UserLocationTrackable: AnyObject {
     var userCoordinate: CLLocationCoordinate2D? { get set }
 }
-protocol LocationProtocol: UserLocationProtocol {
+protocol LocationTrackable: UserLocationTrackable {
     var manager: CLLocationManager { get }
     var delegate: LocationManagerDelegate? { get }
     
     func setup()
     func startLocationTracking()
     func stopLocationTracking()
-    func startMonitoringSignificantLocationChanges()
     func userLocationDidChanged(_ location: CLLocation)
     func getCoordinateRegion(fromLocation location: CLLocation,
                              latitudeDelta: CGFloat,
@@ -30,8 +29,8 @@ protocol LocationProtocol: UserLocationProtocol {
                              latitudeDelta: CGFloat,
                              longitudeDelta: CGFloat) -> MKCoordinateRegion
 }
-//MARK: - LocationProtocol
-extension LocationProtocol {
+//MARK: - LocationTrackable
+extension LocationTrackable {
     func getCoordinateRegion(fromLocation location: CLLocation,
                              latitudeDelta: CGFloat,
                              longitudeDelta: CGFloat) -> MKCoordinateRegion {
