@@ -10,9 +10,9 @@ import UIKit.UIViewController
 final class HomeViewController: UIViewController {
     // MARK: Outlets
  
-    @IBOutlet weak var statusButton: CustomReusableButtonView!
-    @IBOutlet weak var maydayButton: CustomReusableButtonView!
-    @IBOutlet weak var roadStatusButton: CustomReusableButtonView!
+    @IBOutlet private weak var statusButton: CustomReusableButtonView!
+    @IBOutlet private weak var maydayButton: CustomReusableButtonView!
+    @IBOutlet private weak var roadStatusButton: CustomReusableButtonView!
     
     
     // MARK: Properties
