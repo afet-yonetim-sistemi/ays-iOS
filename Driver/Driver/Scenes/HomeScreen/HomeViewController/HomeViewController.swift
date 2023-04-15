@@ -9,10 +9,11 @@ import UIKit.UIViewController
 
 final class HomeViewController: UIViewController {
     // MARK: Outlets
-    @IBOutlet private weak var settingsButton: CustomReusableButtonView!
-    @IBOutlet private weak var roadStatusButton: CustomReusableButtonView!
-    @IBOutlet private weak var maydayButton: CustomReusableButtonView!
-    @IBOutlet private weak var statusButton: CustomReusableButtonView!
+ 
+    @IBOutlet weak var statusButton: CustomReusableButtonView!
+    @IBOutlet weak var maydayButton: CustomReusableButtonView!
+    @IBOutlet weak var roadStatusButton: CustomReusableButtonView!
+    
     
     // MARK: Properties
     var viewModel: HomeViewModelProtocol!
@@ -24,17 +25,14 @@ final class HomeViewController: UIViewController {
     }
     
     private func setButtons() {
-        settingsButton.configureButton(title: "Ayarlar", imageName: "gear") { [weak self] in
-            self?.viewModel.buttonPressed(type: .settings)
-        }
-        roadStatusButton.configureButton(title: "Yol Durumu", imageName: "road") {[weak self] in
-            self?.viewModel.buttonPressed(type: .roadStatus)
+        statusButton.configureButton(title: "Statü", imageName: "status") {[weak self] in
+            self?.viewModel.buttonPressed(type: .status)
         }
         maydayButton.configureButton(title: "Yardım Çağır", imageName: "help") {[weak self] in
             self?.viewModel.buttonPressed(type: .help)
         }
-        statusButton.configureButton(title: "Durum", imageName: "status") {[weak self] in
-            self?.viewModel.buttonPressed(type: .status)
+        roadStatusButton.configureButton(title: "Tehlikeli Yol", imageName: "road") {[weak self] in
+            self?.viewModel.buttonPressed(type: .roadStatus)
         }
     }
 }

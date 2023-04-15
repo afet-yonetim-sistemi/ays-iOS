@@ -15,7 +15,8 @@ final class SplashScreenViewModel: SplashScreenViewModelProtocol {
     
     // MARK: Functions
     func getSomeData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [weak self] in
+            guard let self else { return }
             self.delegate?.handleOutput(.returnData(someData: "Done"))
         }
     }
