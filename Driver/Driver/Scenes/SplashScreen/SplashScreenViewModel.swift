@@ -12,7 +12,7 @@ final class SplashScreenViewModel: SplashScreenViewModelProtocol {
     // MARK: Propeties
     weak var delegate: SplashScreenViewDelegate?
     var router: SplashScreenRouterProtocol!
-    
+  
     // MARK: Functions
     func getSomeData() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4) { [weak self] in

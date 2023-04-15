@@ -7,13 +7,11 @@
 
 import UIKit.UIViewController
 
-final class HomeViewController: UIViewController {
+final class HomeViewController: BaseViewController {
     // MARK: Outlets
- 
     @IBOutlet private weak var statusButton: CustomReusableButtonView!
     @IBOutlet private weak var maydayButton: CustomReusableButtonView!
     @IBOutlet private weak var roadStatusButton: CustomReusableButtonView!
-    
     
     // MARK: Properties
     var viewModel: HomeViewModelProtocol!
