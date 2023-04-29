@@ -1,5 +1,5 @@
 //
-//  UIColor+.swift
+//  UIColor+Extension.swift
 //  Driver
 //
 //  Created by Fatih Doğan on 22.02.2023.
