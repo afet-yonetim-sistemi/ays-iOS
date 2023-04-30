@@ -12,9 +12,20 @@ final class HomeViewModel: HomeViewModelProtocol {
     // MARK: Propeties
     weak var delegate: HomeViewDelegate?
     var router: HomeViewRouterProtocol!
+    var stateManager: ApplicationStateManager!
+    
+    init() {
+        stateManager = ApplicationStateManager(delegate: self)
+    }
     
     func buttonPressed(type: HomeViewButtons) {
         
     }
-    
+}
+
+//MARK: - StateManagerDelegate
+extension HomeViewModel: ApplicationStateManagerDelegate {
+    func appStateDidChanged(_ state: ApplicationStateManager.State) {
+        
+    }
 }

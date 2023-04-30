@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		377F4E9C49931B85A298F6AB /* Pods_DriverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF153E52437106642CA448F /* Pods_DriverTests.framework */; };
 		8EFBF20ADE9BBED25D9C75E1 /* Pods_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D54BB878FA08497F426A53 /* Pods_Driver.framework */; };
+
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
 		95DC687B29A3BCF90045CC4F /* DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687A29A3BCF90045CC4F /* DriverUITests.swift */; };
 		95DC687D29A3BCF90045CC4F /* DriverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687C29A3BCF90045CC4F /* DriverUITestsLaunchTests.swift */; };
@@ -87,6 +88,7 @@
 		70D54BB878FA08497F426A53 /* Pods_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C6258D36716EC6E5AC67A2 /* Pods-Driver-DriverUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver-DriverUITests.release.xcconfig"; path = "Target Support Files/Pods-Driver-DriverUITests/Pods-Driver-DriverUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9072C0F06AAFB4000452ED0A /* Pods-DriverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverTests.release.xcconfig"; path = "Target Support Files/Pods-DriverTests/Pods-DriverTests.release.xcconfig"; sourceTree = "<group>"; };
+
 		95DC685629A3BCF80045CC4F /* Driver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC686C29A3BCF90045CC4F /* DriverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DC687029A3BCF90045CC4F /* DriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTests.swift; sourceTree = "<group>"; };
@@ -295,7 +297,9 @@
 				BABA264429FDAD5D0052B52E /* HomeViewController */,
 				BABA264729FDAD5D0052B52E /* HomeViewProtocols.swift */,
 			);
+
 			path = HomeScreen;
+
 			sourceTree = "<group>";
 		};
 		BABA264429FDAD5D0052B52E /* HomeViewController */ = {
@@ -387,7 +391,9 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+
 		BABA266229FDAD5D0052B52E /* Builder */ = {
+
 			isa = PBXGroup;
 			children = (
 				BABA266329FDAD5D0052B52E /* RequestBuilder.swift */,
@@ -412,6 +418,7 @@
 				BABA266B29FDAD5D0052B52E /* Settings.bundle */,
 				BABA266C29FDAD5D0052B52E /* Assets.xcassets */,
 				BABA266D29FDAD5D0052B52E /* Color.xcassets */,
+
 			);
 			path = Resources;
 			sourceTree = "<group>";
