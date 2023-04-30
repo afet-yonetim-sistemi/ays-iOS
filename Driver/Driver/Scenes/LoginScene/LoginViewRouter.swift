@@ -19,8 +19,8 @@ final class LoginViewRouter: LoginRouterProtocol {
      */
     func routeToPage(_ routes: LoginRoutes) {
         guard let viewController = viewController as? UIViewController else { return }
-        let homeViewController = HomeViewBuilder.make()
-        viewController.present(homeViewController, animated: true)
+        let tabBarController = TabBarControllerBuilder.make()
+        viewController.present(tabBarController, animated: true)
     }
 }
 

@@ -61,6 +61,23 @@
 		BABA26AF29FDAD5E0052B52E /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA267B29FDAD5D0052B52E /* JailbreakChecker.swift */; };
 		BABA26B029FDAD5E0052B52E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA267C29FDAD5D0052B52E /* Animator.swift */; };
 		BABA26B129FDAD5E0052B52E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA267D29FDAD5D0052B52E /* AppEnvironment.swift */; };
+		BABA26CC29FDBD2B0052B52E /* TabBarControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26C629FDBD2B0052B52E /* TabBarControllerBuilder.swift */; };
+		BABA26D429FDBD9A0052B52E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26D229FDBD9A0052B52E /* TabBarController.swift */; };
+		BABA26D529FDBD9A0052B52E /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA26D329FDBD9A0052B52E /* TabBarController.xib */; };
+		BABA26DE29FDBEEF0052B52E /* SettingsViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26D829FDBEEF0052B52E /* SettingsViewBuilder.swift */; };
+		BABA26DF29FDBEEF0052B52E /* SettingsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26D929FDBEEF0052B52E /* SettingsViewRouter.swift */; };
+		BABA26E029FDBEEF0052B52E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26DA29FDBEEF0052B52E /* SettingsViewController.swift */; };
+		BABA26E129FDBEEF0052B52E /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26DB29FDBEEF0052B52E /* SettingsProtocols.swift */; };
+		BABA26E229FDBEEF0052B52E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26DC29FDBEEF0052B52E /* SettingsViewModel.swift */; };
+		BABA26E329FDBEEF0052B52E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA26DD29FDBEEF0052B52E /* SettingsViewController.xib */; };
+		BABA26EB29FDBFDF0052B52E /* MessagesViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26E529FDBFDF0052B52E /* MessagesViewBuilder.swift */; };
+		BABA26EC29FDBFDF0052B52E /* MessagesViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26E629FDBFDF0052B52E /* MessagesViewRouter.swift */; };
+		BABA26ED29FDBFDF0052B52E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26E729FDBFDF0052B52E /* MessagesViewController.swift */; };
+		BABA26EE29FDBFDF0052B52E /* MessagesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26E829FDBFDF0052B52E /* MessagesProtocols.swift */; };
+		BABA26EF29FDBFDF0052B52E /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26E929FDBFDF0052B52E /* MessagesViewModel.swift */; };
+		BABA26F029FDBFDF0052B52E /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA26EA29FDBFDF0052B52E /* MessagesViewController.xib */; };
+		BABA26F229FDC4950052B52E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26F129FDC4950052B52E /* TabBarView.swift */; };
+		BABA26F429FDCB1E0052B52E /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA26F329FDCB1E0052B52E /* TabBarView.xib */; };
 		F20CB9792D739A0D9209C8E1 /* Pods_Driver_DriverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F3B9FE102B6D82E54A7E7 /* Pods_Driver_DriverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +161,23 @@
 		BABA267C29FDAD5D0052B52E /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		BABA267D29FDAD5D0052B52E /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		BABA267E29FDAD5D0052B52E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABA26C629FDBD2B0052B52E /* TabBarControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerBuilder.swift; sourceTree = "<group>"; };
+		BABA26D229FDBD9A0052B52E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		BABA26D329FDBD9A0052B52E /* TabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		BABA26D829FDBEEF0052B52E /* SettingsViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewBuilder.swift; sourceTree = "<group>"; };
+		BABA26D929FDBEEF0052B52E /* SettingsViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewRouter.swift; sourceTree = "<group>"; };
+		BABA26DA29FDBEEF0052B52E /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BABA26DB29FDBEEF0052B52E /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		BABA26DC29FDBEEF0052B52E /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		BABA26DD29FDBEEF0052B52E /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		BABA26E529FDBFDF0052B52E /* MessagesViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewBuilder.swift; sourceTree = "<group>"; };
+		BABA26E629FDBFDF0052B52E /* MessagesViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewRouter.swift; sourceTree = "<group>"; };
+		BABA26E729FDBFDF0052B52E /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		BABA26E829FDBFDF0052B52E /* MessagesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesProtocols.swift; sourceTree = "<group>"; };
+		BABA26E929FDBFDF0052B52E /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		BABA26EA29FDBFDF0052B52E /* MessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
+		BABA26F129FDC4950052B52E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		BABA26F329FDCB1E0052B52E /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
 		C04E5FC9335B10775951FB72 /* Pods-Driver-DriverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver-DriverUITests.debug.xcconfig"; path = "Target Support Files/Pods-Driver-DriverUITests/Pods-Driver-DriverUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2685D137019AFA3A9C12105 /* Pods-Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver.release.xcconfig"; path = "Target Support Files/Pods-Driver/Pods-Driver.release.xcconfig"; sourceTree = "<group>"; };
 		FB946FF0CA65E857C58BE286 /* Pods-Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver.debug.xcconfig"; path = "Target Support Files/Pods-Driver/Pods-Driver.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,14 +292,17 @@
 		BABA263729FDAD5D0052B52E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				BABA263829FDAD5D0052B52E /* SplashScreen */,
-				BABA264029FDAD5D0052B52E /* HomeScreen */,
-				BABA264829FDAD5D0052B52E /* LoginScreen */,
+				BABA26E429FDBFB90052B52E /* MessagesScene */,
+				BABA26D729FDBEAC0052B52E /* SettingsScene */,
+				BABA26B329FDB2A90052B52E /* TabBarController */,
+				BABA263829FDAD5D0052B52E /* SplashScene */,
+				BABA264029FDAD5D0052B52E /* HomeScene */,
+				BABA264829FDAD5D0052B52E /* LoginScene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		BABA263829FDAD5D0052B52E /* SplashScreen */ = {
+		BABA263829FDAD5D0052B52E /* SplashScene */ = {
 			isa = PBXGroup;
 			children = (
 				BABA263929FDAD5D0052B52E /* SplashScreenRouter.swift */,
@@ -274,7 +311,7 @@
 				BABA263C29FDAD5D0052B52E /* SplashScreenViewModel.swift */,
 				BABA263D29FDAD5D0052B52E /* ViewController */,
 			);
-			path = SplashScreen;
+			path = SplashScene;
 			sourceTree = "<group>";
 		};
 		BABA263D29FDAD5D0052B52E /* ViewController */ = {
@@ -286,7 +323,7 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		BABA264029FDAD5D0052B52E /* HomeScreen */ = {
+		BABA264029FDAD5D0052B52E /* HomeScene */ = {
 			isa = PBXGroup;
 			children = (
 				BABA264129FDAD5D0052B52E /* HomeViewModel.swift */,
@@ -295,7 +332,7 @@
 				BABA264429FDAD5D0052B52E /* HomeViewController */,
 				BABA264729FDAD5D0052B52E /* HomeViewProtocols.swift */,
 			);
-			path = HomeScreen;
+			path = HomeScene;
 			sourceTree = "<group>";
 		};
 		BABA264429FDAD5D0052B52E /* HomeViewController */ = {
@@ -307,7 +344,7 @@
 			path = HomeViewController;
 			sourceTree = "<group>";
 		};
-		BABA264829FDAD5D0052B52E /* LoginScreen */ = {
+		BABA264829FDAD5D0052B52E /* LoginScene */ = {
 			isa = PBXGroup;
 			children = (
 				BABA264929FDAD5D0052B52E /* LoginViewContracts.swift */,
@@ -316,7 +353,7 @@
 				BABA264D29FDAD5D0052B52E /* ViewController */,
 				BABA265029FDAD5D0052B52E /* LoginViewRouter.swift */,
 			);
-			path = LoginScreen;
+			path = LoginScene;
 			sourceTree = "<group>";
 		};
 		BABA264D29FDAD5D0052B52E /* ViewController */ = {
@@ -448,6 +485,44 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		BABA26B329FDB2A90052B52E /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				BABA26D229FDBD9A0052B52E /* TabBarController.swift */,
+				BABA26D329FDBD9A0052B52E /* TabBarController.xib */,
+				BABA26C629FDBD2B0052B52E /* TabBarControllerBuilder.swift */,
+				BABA26F129FDC4950052B52E /* TabBarView.swift */,
+				BABA26F329FDCB1E0052B52E /* TabBarView.xib */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		BABA26D729FDBEAC0052B52E /* SettingsScene */ = {
+			isa = PBXGroup;
+			children = (
+				BABA26D829FDBEEF0052B52E /* SettingsViewBuilder.swift */,
+				BABA26D929FDBEEF0052B52E /* SettingsViewRouter.swift */,
+				BABA26DA29FDBEEF0052B52E /* SettingsViewController.swift */,
+				BABA26DB29FDBEEF0052B52E /* SettingsProtocols.swift */,
+				BABA26DC29FDBEEF0052B52E /* SettingsViewModel.swift */,
+				BABA26DD29FDBEEF0052B52E /* SettingsViewController.xib */,
+			);
+			path = SettingsScene;
+			sourceTree = "<group>";
+		};
+		BABA26E429FDBFB90052B52E /* MessagesScene */ = {
+			isa = PBXGroup;
+			children = (
+				BABA26E529FDBFDF0052B52E /* MessagesViewBuilder.swift */,
+				BABA26E629FDBFDF0052B52E /* MessagesViewRouter.swift */,
+				BABA26E729FDBFDF0052B52E /* MessagesViewController.swift */,
+				BABA26E829FDBFDF0052B52E /* MessagesProtocols.swift */,
+				BABA26E929FDBFDF0052B52E /* MessagesViewModel.swift */,
+				BABA26EA29FDBFDF0052B52E /* MessagesViewController.xib */,
+			);
+			path = MessagesScene;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -558,10 +633,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BABA26AD29FDAD5E0052B52E /* CustomReusableButtonView.xib in Resources */,
+				BABA26E329FDBEEF0052B52E /* SettingsViewController.xib in Resources */,
 				BABA26A329FDAD5E0052B52E /* Settings.bundle in Resources */,
 				BABA268329FDAD5E0052B52E /* SplashScreenViewController.xib in Resources */,
 				BABA268829FDAD5E0052B52E /* HomeViewController.xib in Resources */,
 				BABA268F29FDAD5E0052B52E /* LoginViewController.xib in Resources */,
+				BABA26F029FDBFDF0052B52E /* MessagesViewController.xib in Resources */,
+				BABA26D529FDBD9A0052B52E /* TabBarController.xib in Resources */,
+				BABA26F429FDCB1E0052B52E /* TabBarView.xib in Resources */,
 				BABA26A429FDAD5E0052B52E /* Assets.xcassets in Resources */,
 				BABA26A529FDAD5E0052B52E /* Color.xcassets in Resources */,
 			);
@@ -693,11 +772,15 @@
 			files = (
 				BABA269929FDAD5E0052B52E /* AppDelegate.swift in Sources */,
 				BABA26B029FDAD5E0052B52E /* Animator.swift in Sources */,
+				BABA26ED29FDBFDF0052B52E /* MessagesViewController.swift in Sources */,
+				BABA26DF29FDBEEF0052B52E /* SettingsViewRouter.swift in Sources */,
 				BABA268029FDAD5E0052B52E /* SplashScreenBuilder.swift in Sources */,
 				BABA268629FDAD5E0052B52E /* HomeViewBuilder.swift in Sources */,
 				BABA26AA29FDAD5E0052B52E /* DriverLog.swift in Sources */,
+				BABA26EC29FDBFDF0052B52E /* MessagesViewRouter.swift in Sources */,
 				BABA269F29FDAD5E0052B52E /* Endpoint.swift in Sources */,
 				BABA26A829FDAD5E0052B52E /* BaseViewController.swift in Sources */,
+				BABA26EE29FDBFDF0052B52E /* MessagesProtocols.swift in Sources */,
 				BABA26A229FDAD5E0052B52E /* APIClient.swift in Sources */,
 				BABA269829FDAD5E0052B52E /* AppContainer.swift in Sources */,
 				BABA269329FDAD5E0052B52E /* UIColor+Extension.swift in Sources */,
@@ -705,6 +788,9 @@
 				BABA269D29FDAD5E0052B52E /* RequestBuilder.swift in Sources */,
 				BABA269029FDAD5E0052B52E /* LoginViewController.swift in Sources */,
 				BABA26A029FDAD5E0052B52E /* APIError.swift in Sources */,
+				BABA26EF29FDBFDF0052B52E /* MessagesViewModel.swift in Sources */,
+				BABA26F229FDC4950052B52E /* TabBarView.swift in Sources */,
+				BABA26DE29FDBEEF0052B52E /* SettingsViewBuilder.swift in Sources */,
 				BABA268D29FDAD5E0052B52E /* LoginViewBuilder.swift in Sources */,
 				BABA269129FDAD5E0052B52E /* LoginViewRouter.swift in Sources */,
 				BABA268529FDAD5E0052B52E /* HomeViewModel.swift in Sources */,
@@ -713,19 +799,25 @@
 				BABA268929FDAD5E0052B52E /* HomeViewController.swift in Sources */,
 				BABA26B129FDAD5E0052B52E /* AppEnvironment.swift in Sources */,
 				BABA267F29FDAD5E0052B52E /* SplashScreenRouter.swift in Sources */,
+				BABA26EB29FDBFDF0052B52E /* MessagesViewBuilder.swift in Sources */,
 				BABA26A929FDAD5E0052B52E /* CustomXibView.swift in Sources */,
 				BABA269429FDAD5E0052B52E /* UIView+Extension.swift in Sources */,
+				BABA26E029FDBEEF0052B52E /* SettingsViewController.swift in Sources */,
+				BABA26E229FDBEEF0052B52E /* SettingsViewModel.swift in Sources */,
 				BABA269C29FDAD5E0052B52E /* Request.swift in Sources */,
 				BABA26AB29FDAD5E0052B52E /* GenericError.swift in Sources */,
 				BABA268429FDAD5E0052B52E /* SplashScreenViewController.swift in Sources */,
 				BABA268C29FDAD5E0052B52E /* LoginViewModel.swift in Sources */,
 				BABA268129FDAD5E0052B52E /* SplashScreenProtocols.swift in Sources */,
 				BABA26A129FDAD5E0052B52E /* Model.swift in Sources */,
+				BABA26D429FDBD9A0052B52E /* TabBarController.swift in Sources */,
+				BABA26CC29FDBD2B0052B52E /* TabBarControllerBuilder.swift in Sources */,
 				BABA268B29FDAD5E0052B52E /* LoginViewContracts.swift in Sources */,
 				BABA269A29FDAD5E0052B52E /* SceneDelegate.swift in Sources */,
 				BABA26A729FDAD5E0052B52E /* LocalError.swift in Sources */,
 				BABA269E29FDAD5E0052B52E /* Builder.swift in Sources */,
 				BABA269B29FDAD5E0052B52E /* Environment.swift in Sources */,
+				BABA26E129FDBEEF0052B52E /* SettingsProtocols.swift in Sources */,
 				BABA269729FDAD5E0052B52E /* AppRouter.swift in Sources */,
 				BABA26AC29FDAD5E0052B52E /* AlertType.swift in Sources */,
 				BABA26AE29FDAD5E0052B52E /* CustomReusableButtonView.swift in Sources */,
