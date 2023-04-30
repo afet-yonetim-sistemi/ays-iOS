@@ -17,7 +17,12 @@ final class HomeViewModel: HomeViewModelProtocol {
     init() {
         stateManager = ApplicationStateManager(delegate: self)
     }
+    
+    func buttonPressed(type: HomeViewButtons) {
+        
+    }
 }
+
 //MARK: - StateManagerDelegate
 extension HomeViewModel: ApplicationStateManagerDelegate {
     func appStateDidChanged(_ state: ApplicationStateManager.State) {
