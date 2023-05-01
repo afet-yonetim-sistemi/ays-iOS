@@ -78,6 +78,7 @@
 		BABA26F029FDBFDF0052B52E /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA26EA29FDBFDF0052B52E /* MessagesViewController.xib */; };
 		BABA26F229FDC4950052B52E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26F129FDC4950052B52E /* TabBarView.swift */; };
 		BABA26F429FDCB1E0052B52E /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA26F329FDCB1E0052B52E /* TabBarView.xib */; };
+		BABA27792A0044F20052B52E /* TabBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27782A0044F20052B52E /* TabBarTransition.swift */; };
 		F20CB9792D739A0D9209C8E1 /* Pods_Driver_DriverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F3B9FE102B6D82E54A7E7 /* Pods_Driver_DriverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +179,7 @@
 		BABA26EA29FDBFDF0052B52E /* MessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
 		BABA26F129FDC4950052B52E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		BABA26F329FDCB1E0052B52E /* TabBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarView.xib; sourceTree = "<group>"; };
+		BABA27782A0044F20052B52E /* TabBarTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarTransition.swift; sourceTree = "<group>"; };
 		C04E5FC9335B10775951FB72 /* Pods-Driver-DriverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver-DriverUITests.debug.xcconfig"; path = "Target Support Files/Pods-Driver-DriverUITests/Pods-Driver-DriverUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2685D137019AFA3A9C12105 /* Pods-Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver.release.xcconfig"; path = "Target Support Files/Pods-Driver/Pods-Driver.release.xcconfig"; sourceTree = "<group>"; };
 		FB946FF0CA65E857C58BE286 /* Pods-Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver.debug.xcconfig"; path = "Target Support Files/Pods-Driver/Pods-Driver.debug.xcconfig"; sourceTree = "<group>"; };
@@ -493,6 +495,7 @@
 				BABA26C629FDBD2B0052B52E /* TabBarControllerBuilder.swift */,
 				BABA26F129FDC4950052B52E /* TabBarView.swift */,
 				BABA26F329FDCB1E0052B52E /* TabBarView.xib */,
+				BABA27782A0044F20052B52E /* TabBarTransition.swift */,
 			);
 			path = TabBarController;
 			sourceTree = "<group>";
@@ -781,6 +784,7 @@
 				BABA269F29FDAD5E0052B52E /* Endpoint.swift in Sources */,
 				BABA26A829FDAD5E0052B52E /* BaseViewController.swift in Sources */,
 				BABA26EE29FDBFDF0052B52E /* MessagesProtocols.swift in Sources */,
+				BABA27792A0044F20052B52E /* TabBarTransition.swift in Sources */,
 				BABA26A229FDAD5E0052B52E /* APIClient.swift in Sources */,
 				BABA269829FDAD5E0052B52E /* AppContainer.swift in Sources */,
 				BABA269329FDAD5E0052B52E /* UIColor+Extension.swift in Sources */,
