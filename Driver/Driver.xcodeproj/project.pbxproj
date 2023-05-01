@@ -82,7 +82,6 @@
 		BABA281F2A00588D0052B52E /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D82A00588C0052B52E /* JailbreakChecker.swift */; };
 		BABA28202A00588D0052B52E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D92A00588C0052B52E /* Animator.swift */; };
 		BABA28212A00588D0052B52E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27DA2A00588C0052B52E /* AppEnvironment.swift */; };
-		BABA28222A00588D0052B52E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABA27DB2A00588C0052B52E /* Info.plist */; };
 		F20CB9792D739A0D9209C8E1 /* Pods_Driver_DriverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F3B9FE102B6D82E54A7E7 /* Pods_Driver_DriverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -669,7 +668,6 @@
 				BABA27E72A00588D0052B52E /* MessagesViewController.xib in Resources */,
 				BABA27FD2A00588D0052B52E /* HomeViewController.xib in Resources */,
 				BABA28162A00588D0052B52E /* Color.xcassets in Resources */,
-				BABA28222A00588D0052B52E /* Info.plist in Resources */,
 				BABA281D2A00588D0052B52E /* CustomReusableButtonView.xib in Resources */,
 				BABA28152A00588D0052B52E /* Assets.xcassets in Resources */,
 				BABA27E02A00588D0052B52E /* SettingsViewController.xib in Resources */,
