@@ -15,7 +15,7 @@ enum AppEnvironment: String {
         // FIXME: Change after servis deploy
         switch self {
         case .development:
-            return "https://development.base.url/"
+            return "http://ec2-18-159-211-214.eu-central-1.compute.amazonaws.com/"
         case .production:
             return "https://production.base.url/"
         }

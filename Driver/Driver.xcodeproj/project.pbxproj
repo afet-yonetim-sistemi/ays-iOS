@@ -64,7 +64,10 @@
 		BABA277229FE7E3D0052B52E /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273D29FE7E3C0052B52E /* JailbreakChecker.swift */; };
 		BABA277329FE7E3D0052B52E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273E29FE7E3C0052B52E /* Animator.swift */; };
 		BABA277429FE7E3D0052B52E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273F29FE7E3C0052B52E /* AppEnvironment.swift */; };
-		BABA277529FE7E3D0052B52E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABA274029FE7E3C0052B52E /* Info.plist */; };
+		BAE7892F2A07F73600017FF5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE7892E2A07F73600017FF5 /* APIManager.swift */; };
+		BAE789312A07FFC500017FF5 /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE789302A07FFC500017FF5 /* HTTPHeader.swift */; };
+		BAE789342A08029600017FF5 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE789332A08029600017FF5 /* Token.swift */; };
+		BAE789382A080B6800017FF5 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE789372A080B6800017FF5 /* TokenManager.swift */; };
 		F20CB9792D739A0D9209C8E1 /* Pods_Driver_DriverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F3B9FE102B6D82E54A7E7 /* Pods_Driver_DriverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +154,10 @@
 		BABA273E29FE7E3C0052B52E /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		BABA273F29FE7E3C0052B52E /* AppEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		BABA274029FE7E3C0052B52E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAE7892E2A07F73600017FF5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BAE789302A07FFC500017FF5 /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		BAE789332A08029600017FF5 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		BAE789372A080B6800017FF5 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		C04E5FC9335B10775951FB72 /* Pods-Driver-DriverUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver-DriverUITests.debug.xcconfig"; path = "Target Support Files/Pods-Driver-DriverUITests/Pods-Driver-DriverUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F2685D137019AFA3A9C12105 /* Pods-Driver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver.release.xcconfig"; path = "Target Support Files/Pods-Driver/Pods-Driver.release.xcconfig"; sourceTree = "<group>"; };
 		FB946FF0CA65E857C58BE286 /* Pods-Driver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driver.debug.xcconfig"; path = "Target Support Files/Pods-Driver/Pods-Driver.debug.xcconfig"; sourceTree = "<group>"; };
@@ -255,7 +262,6 @@
 				BABA271A29FE7E3C0052B52E /* Util */,
 				BABA271F29FE7E3C0052B52E /* Networking */,
 				BABA272D29FE7E3C0052B52E /* Resources */,
-				BABA273129FE7E3C0052B52E /* Extenison */,
 				BABA273229FE7E3C0052B52E /* Custom */,
 				BABA273929FE7E3C0052B52E /* Views */,
 				BABA273C29FE7E3C0052B52E /* Helper */,
@@ -363,6 +369,7 @@
 		BABA271A29FE7E3C0052B52E /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				BAE789372A080B6800017FF5 /* TokenManager.swift */,
 				BABA271B29FE7E3C0052B52E /* ApplicationStateManager.swift */,
 				BABA271C29FE7E3C0052B52E /* Location */,
 			);
@@ -381,8 +388,10 @@
 		BABA271F29FE7E3C0052B52E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BAE789322A08028B00017FF5 /* Model */,
 				BABA272029FE7E3C0052B52E /* Environment */,
 				BABA272229FE7E3C0052B52E /* Remote */,
+				BAE7892E2A07F73600017FF5 /* APIManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -429,6 +438,7 @@
 				BABA272A29FE7E3C0052B52E /* APIError.swift */,
 				BABA272B29FE7E3C0052B52E /* Model.swift */,
 				BABA272C29FE7E3C0052B52E /* APIClient.swift */,
+				BAE789302A07FFC500017FF5 /* HTTPHeader.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -441,13 +451,6 @@
 				BABA273029FE7E3C0052B52E /* Color.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		BABA273129FE7E3C0052B52E /* Extenison */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extenison;
 			sourceTree = "<group>";
 		};
 		BABA273229FE7E3C0052B52E /* Custom */ = {
@@ -480,6 +483,14 @@
 				BABA273F29FE7E3C0052B52E /* AppEnvironment.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		BAE789322A08028B00017FF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAE789332A08029600017FF5 /* Token.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -591,7 +602,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABA277529FE7E3D0052B52E /* Info.plist in Resources */,
 				BABA277029FE7E3D0052B52E /* CustomReusableButtonView.xib in Resources */,
 				BABA276729FE7E3D0052B52E /* Settings.bundle in Resources */,
 				BABA274529FE7E3C0052B52E /* SplashScreenViewController.xib in Resources */,
@@ -746,6 +756,7 @@
 				BABA274B29FE7E3C0052B52E /* HomeViewController.swift in Sources */,
 				BABA274129FE7E3C0052B52E /* SplashScreenRouter.swift in Sources */,
 				BABA275829FE7E3C0052B52E /* AppRouter.swift in Sources */,
+				BAE7892F2A07F73600017FF5 /* APIManager.swift in Sources */,
 				BABA277329FE7E3D0052B52E /* Animator.swift in Sources */,
 				BABA274629FE7E3C0052B52E /* SplashScreenViewController.swift in Sources */,
 				BABA276129FE7E3D0052B52E /* RequestBuilder.swift in Sources */,
@@ -764,7 +775,10 @@
 				BABA277429FE7E3D0052B52E /* AppEnvironment.swift in Sources */,
 				BABA276D29FE7E3D0052B52E /* DriverLog.swift in Sources */,
 				BABA276529FE7E3D0052B52E /* Model.swift in Sources */,
+				BAE789342A08029600017FF5 /* Token.swift in Sources */,
 				BABA274D29FE7E3C0052B52E /* LoginViewContracts.swift in Sources */,
+				BAE789382A080B6800017FF5 /* TokenManager.swift in Sources */,
+				BAE789312A07FFC500017FF5 /* HTTPHeader.swift in Sources */,
 				BABA274C29FE7E3C0052B52E /* HomeViewProtocols.swift in Sources */,
 				BABA276C29FE7E3D0052B52E /* CustomXibView.swift in Sources */,
 				BABA275A29FE7E3C0052B52E /* AppDelegate.swift in Sources */,
