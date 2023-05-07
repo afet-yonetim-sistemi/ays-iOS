@@ -21,7 +21,7 @@ final class APIManager: NSObject {
         request = Request.get(method: .post, path: "/api/v1/authentication/token", queryItems: nil, headers: [HTTPHeader(key: "Content-Type", value: "application/json")], body: data, completion: { result in
             switch result{
             case.success(let data):
-                guard let tokenResponse = try?  Token.decoder.decode(TokenResponse.self, from: data) else { return fail(APIError.unhandledResponse)}
+                guard let tokenResponse = try?  TokenResponse.decoder.decode(TokenResponse.self, from: data) else { return fail(APIError.unhandledResponse)}
                 TokenManager.shared.accessToken = tokenResponse.response.accessToken
                 TokenManager.shared.refreshToken = tokenResponse.response.refreshToken
                 success()

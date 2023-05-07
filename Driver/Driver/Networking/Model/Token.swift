@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct TokenResponse: Decodable {
+struct TokenResponse: Model {
     var response: Token
 }
 
-public struct Token: Model {
+public struct Token: Codable {
     public let accessToken: String
     public let refreshToken: String
 }
