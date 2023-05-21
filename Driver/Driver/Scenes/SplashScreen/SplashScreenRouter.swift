@@ -11,13 +11,17 @@ final class SplashScreenRouter: SplashScreenRouterProtocol {
     
     // MARK: Properties
     weak var viewController: SplashScreenViewDelegate?
-    deinit {
-        print("deinit:", "SplashScreenRouter")
-    }
+
     // MARK: Functions
     func routeToPage(_ routes: SplashScreenRoutes) {
         guard let viewController = viewController as? UIViewController else { return }
-        let loginViewController = LoginViewBuilder.make()
-        viewController.present(loginViewController, animated: true)
+        switch routes {
+        case .mapScreen:
+            let mapViewController = HomeViewBuilder.make()
+            viewController.present(mapViewController, animated: true)
+        case .loginPage:
+            let loginViewController = LoginViewBuilder.make()
+            viewController.present(loginViewController, animated: true)
+        }
     }
 }

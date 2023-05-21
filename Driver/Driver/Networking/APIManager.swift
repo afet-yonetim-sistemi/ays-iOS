@@ -13,17 +13,13 @@ final class APIManager: NSObject {
     
     func login(username: String, password: String, success: @escaping () -> Void, fail: @escaping (Error?) -> Void) {
         
-        let body: [String: Any] = ["username": username,
-                    "password": password]
-       
-        let data =  try? JSONSerialization.data(withJSONObject: body)
-        
-        request = Request.get(method: .post, path: "/api/v1/authentication/token", queryItems: nil, headers: [HTTPHeader(key: "Content-Type", value: "application/json")], body: data, completion: { result in
+       let autBody = AuthBody(username: username, password: password)
+        guard let jsonData = try? JSONEncoder().encode(autBody) else { return fail(APIError.encodingError)}
+        request = Request.get(method: .post, path: "/api/v1/authentication/token", queryItems: nil, headers: [HTTPHeader(key: "Content-Type", value: "application/json")], body: jsonData, completion: { result in
             switch result{
             case.success(let data):
-                guard let tokenResponse = try?  TokenResponse.decoder.decode(TokenResponse.self, from: data) else { return fail(APIError.unhandledResponse)}
-                TokenManager.shared.accessToken = tokenResponse.response.accessToken
-                TokenManager.shared.refreshToken = tokenResponse.response.refreshToken
+                guard let tokenResponse = try?  Token.decoder.decode(ServiceResponse<Token>.self, from: data) else { return fail(APIError.unhandledResponse)}
+                UserDefaultsManager.saveAuthTokens(tokens: tokenResponse.response)
                 success()
             case .failure(let error):
                 fail(error)
@@ -32,4 +28,22 @@ final class APIManager: NSObject {
         apiClient.send(request!)
     }
     
+    func refreshToken( success: @escaping () -> Void, fail: @escaping (Error?) -> Void) {
+        
+        let token = UserDefaultsManager.getRefreshToken()
+        guard let jsonData = try? JSONEncoder().encode(token) else { return fail(APIError.encodingError)}
+        
+        request = Request.get(method: .post, path: "/api/v1/authentication/token/refresh", queryItems: nil, headers: [HTTPHeader(key: "Content-Type", value: "application/json")], body: jsonData, completion: { result in
+            switch result {
+            case.success(let data):
+                guard let tokenResponse = try?  Token.decoder.decode(ServiceResponse<Token>.self, from: data) else { return fail(APIError.unhandledResponse)}
+                UserDefaultsManager.saveAuthTokens(tokens: tokenResponse.response)
+                success()
+            case .failure(let error):
+                UserDefaultsManager.dropTokens()
+                fail(error)
+            }
+        })
+        apiClient.send(request!)
+    }
 }

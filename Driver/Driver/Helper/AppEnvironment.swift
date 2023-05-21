@@ -17,7 +17,7 @@ enum AppEnvironment: String {
         case .development:
             return "http://ec2-18-159-211-214.eu-central-1.compute.amazonaws.com/"
         case .production:
-            return "https://production.base.url/"
+            return "http://ec2-18-159-211-214.eu-central-1.compute.amazonaws.com/"
         }
     }
     

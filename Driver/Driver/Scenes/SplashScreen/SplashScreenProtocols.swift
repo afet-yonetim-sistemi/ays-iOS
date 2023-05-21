@@ -15,13 +15,12 @@ protocol SplashScreenViewDelegate: AnyObject {
 //MARK: - View Model Protocol
 protocol SplashScreenViewModelProtocol: AnyObject {
     var delegate: SplashScreenViewDelegate? { get set }
-    func getSomeData()
-    func nextPage()
+    func getToken()
 }
 
 //MARK: - View Model Output
 enum SplashScreenViewModelOutput {
-    case returnData(someData: Any)
+//    case returnData(someData: Any)
 }
 
 //MARK: - Router Protocol
@@ -30,5 +29,6 @@ protocol SplashScreenRouterProtocol: AnyObject {
    }
 
 enum SplashScreenRoutes {
-       case nextPage
+    case mapScreen
+    case loginPage
    }

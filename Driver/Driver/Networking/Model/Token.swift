@@ -7,11 +7,18 @@
 
 import Foundation
 
-struct TokenResponse: Model {
-    var response: Token
+struct Token: Model {
+    let accessToken: String
+    let accessTokenExpiresAt: Int64
+    let refreshToken: String
+  
 }
 
-public struct Token: Codable {
-    public let accessToken: String
-    public let refreshToken: String
+struct TokenInfo {
+    let token: String
+    let expiresAt: Int64
+}
+
+struct RefreshTokenInfo: Codable {
+    let refreshToken: String
 }

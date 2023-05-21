@@ -45,7 +45,6 @@ struct Request {
         return Request(builder: builder, completion: completion)
     }
     
-    #warning("Tolga: I will add post request after the web service is defined.")
 }
 
 /**
