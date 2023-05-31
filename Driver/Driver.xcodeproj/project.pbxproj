@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297239892A237A70001E07B6 /* RepeatTimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297239882A237A70001E07B6 /* RepeatTimerManager.swift */; };
 		377F4E9C49931B85A298F6AB /* Pods_DriverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF153E52437106642CA448F /* Pods_DriverTests.framework */; };
 		8EFBF20ADE9BBED25D9C75E1 /* Pods_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D54BB878FA08497F426A53 /* Pods_Driver.framework */; };
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
@@ -64,7 +65,6 @@
 		BABA277229FE7E3D0052B52E /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273D29FE7E3C0052B52E /* JailbreakChecker.swift */; };
 		BABA277329FE7E3D0052B52E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273E29FE7E3C0052B52E /* Animator.swift */; };
 		BABA277429FE7E3D0052B52E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273F29FE7E3C0052B52E /* AppEnvironment.swift */; };
-		BABA277529FE7E3D0052B52E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABA274029FE7E3C0052B52E /* Info.plist */; };
 		F20CB9792D739A0D9209C8E1 /* Pods_Driver_DriverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F3B9FE102B6D82E54A7E7 /* Pods_Driver_DriverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +86,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		297239882A237A70001E07B6 /* RepeatTimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatTimerManager.swift; sourceTree = "<group>"; };
 		3AF153E52437106642CA448F /* Pods_DriverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4414D799539C3F8D77D0DCC3 /* Pods-DriverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverTests.debug.xcconfig"; path = "Target Support Files/Pods-DriverTests/Pods-DriverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70D54BB878FA08497F426A53 /* Pods_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -255,7 +256,6 @@
 				BABA271A29FE7E3C0052B52E /* Util */,
 				BABA271F29FE7E3C0052B52E /* Networking */,
 				BABA272D29FE7E3C0052B52E /* Resources */,
-				BABA273129FE7E3C0052B52E /* Extenison */,
 				BABA273229FE7E3C0052B52E /* Custom */,
 				BABA273929FE7E3C0052B52E /* Views */,
 				BABA273C29FE7E3C0052B52E /* Helper */,
@@ -365,6 +365,7 @@
 			children = (
 				BABA271B29FE7E3C0052B52E /* ApplicationStateManager.swift */,
 				BABA271C29FE7E3C0052B52E /* Location */,
+				297239882A237A70001E07B6 /* RepeatTimerManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -441,13 +442,6 @@
 				BABA273029FE7E3C0052B52E /* Color.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		BABA273129FE7E3C0052B52E /* Extenison */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extenison;
 			sourceTree = "<group>";
 		};
 		BABA273229FE7E3C0052B52E /* Custom */ = {
@@ -591,7 +585,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABA277529FE7E3D0052B52E /* Info.plist in Resources */,
 				BABA277029FE7E3D0052B52E /* CustomReusableButtonView.xib in Resources */,
 				BABA276729FE7E3D0052B52E /* Settings.bundle in Resources */,
 				BABA274529FE7E3C0052B52E /* SplashScreenViewController.xib in Resources */,
@@ -728,6 +721,7 @@
 			files = (
 				BABA275129FE7E3C0052B52E /* LoginViewController.swift in Sources */,
 				BABA274229FE7E3C0052B52E /* SplashScreenBuilder.swift in Sources */,
+				297239892A237A70001E07B6 /* RepeatTimerManager.swift in Sources */,
 				BABA274829FE7E3C0052B52E /* HomeViewBuilder.swift in Sources */,
 				BABA274F29FE7E3C0052B52E /* LoginViewBuilder.swift in Sources */,
 				BABA275429FE7E3C0052B52E /* UIColor+Extension.swift in Sources */,
