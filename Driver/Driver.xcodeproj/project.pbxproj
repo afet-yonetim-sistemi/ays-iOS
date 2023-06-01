@@ -64,7 +64,6 @@
 		BABA277229FE7E3D0052B52E /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273D29FE7E3C0052B52E /* JailbreakChecker.swift */; };
 		BABA277329FE7E3D0052B52E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273E29FE7E3C0052B52E /* Animator.swift */; };
 		BABA277429FE7E3D0052B52E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273F29FE7E3C0052B52E /* AppEnvironment.swift */; };
-		BABA277529FE7E3D0052B52E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BABA274029FE7E3C0052B52E /* Info.plist */; };
 		F20CB9792D739A0D9209C8E1 /* Pods_Driver_DriverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F3B9FE102B6D82E54A7E7 /* Pods_Driver_DriverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -255,7 +254,6 @@
 				BABA271A29FE7E3C0052B52E /* Util */,
 				BABA271F29FE7E3C0052B52E /* Networking */,
 				BABA272D29FE7E3C0052B52E /* Resources */,
-				BABA273129FE7E3C0052B52E /* Extenison */,
 				BABA273229FE7E3C0052B52E /* Custom */,
 				BABA273929FE7E3C0052B52E /* Views */,
 				BABA273C29FE7E3C0052B52E /* Helper */,
@@ -443,13 +441,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		BABA273129FE7E3C0052B52E /* Extenison */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extenison;
-			sourceTree = "<group>";
-		};
 		BABA273229FE7E3C0052B52E /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,7 +582,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABA277529FE7E3D0052B52E /* Info.plist in Resources */,
 				BABA277029FE7E3D0052B52E /* CustomReusableButtonView.xib in Resources */,
 				BABA276729FE7E3D0052B52E /* Settings.bundle in Resources */,
 				BABA274529FE7E3C0052B52E /* SplashScreenViewController.xib in Resources */,
