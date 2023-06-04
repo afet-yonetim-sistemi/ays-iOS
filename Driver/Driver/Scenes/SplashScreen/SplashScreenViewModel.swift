@@ -16,12 +16,12 @@ final class SplashScreenViewModel: SplashScreenViewModelProtocol {
     // MARK: Functions
     func getToken() {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.async {
             /// Check token in userdefaults
-            if UserDefaultsManager.haveAuthTokens() {
+            if TokenManager.haveAuthTokens() {
                 /// Token was saved before
             
-                if UserDefaultsManager.haveValidAutTokens() {
+                if TokenManager.haveValidAutTokens() {
                     /// Access token is valid
                     self.router.routeToPage(.mapScreen)
                 } else {

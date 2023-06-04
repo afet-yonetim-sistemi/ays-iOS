@@ -19,7 +19,7 @@ final class APIManager: NSObject {
             switch result{
             case.success(let data):
                 guard let tokenResponse = try?  Token.decoder.decode(ServiceResponse<Token>.self, from: data) else { return fail(APIError.unhandledResponse)}
-                UserDefaultsManager.saveAuthTokens(tokens: tokenResponse.response)
+                TokenManager.saveAuthTokens(tokens: tokenResponse.response)
                 success()
             case .failure(let error):
                 fail(error)
@@ -30,17 +30,17 @@ final class APIManager: NSObject {
     
     func refreshToken( success: @escaping () -> Void, fail: @escaping (Error?) -> Void) {
         
-        let token = UserDefaultsManager.getRefreshToken()
+        let token = TokenManager.getRefreshToken()
         guard let jsonData = try? JSONEncoder().encode(token) else { return fail(APIError.encodingError)}
         
         request = Request.get(method: .post, path: "/api/v1/authentication/token/refresh", queryItems: nil, headers: [HTTPHeader(key: "Content-Type", value: "application/json")], body: jsonData, completion: { result in
             switch result {
             case.success(let data):
                 guard let tokenResponse = try?  Token.decoder.decode(ServiceResponse<Token>.self, from: data) else { return fail(APIError.unhandledResponse)}
-                UserDefaultsManager.saveAuthTokens(tokens: tokenResponse.response)
+                TokenManager.saveAuthTokens(tokens: tokenResponse.response)
                 success()
             case .failure(let error):
-                UserDefaultsManager.dropTokens()
+                TokenManager.dropTokens()
                 fail(error)
             }
         })

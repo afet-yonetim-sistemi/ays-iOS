@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		299430442A15678100D06A58 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299430432A15678100D06A58 /* ServiceResponse.swift */; };
 		299430462A15679900D06A58 /* AuthBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299430452A15679900D06A58 /* AuthBody.swift */; };
-		299430482A15689600D06A58 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299430472A15689600D06A58 /* UserDefaultsManager.swift */; };
+		299430482A15689600D06A58 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299430472A15689600D06A58 /* TokenManager.swift */; };
 		377F4E9C49931B85A298F6AB /* Pods_DriverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF153E52437106642CA448F /* Pods_DriverTests.framework */; };
 		8EFBF20ADE9BBED25D9C75E1 /* Pods_Driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D54BB878FA08497F426A53 /* Pods_Driver.framework */; };
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
@@ -93,7 +93,7 @@
 /* Begin PBXFileReference section */
 		299430432A15678100D06A58 /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
 		299430452A15679900D06A58 /* AuthBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBody.swift; sourceTree = "<group>"; };
-		299430472A15689600D06A58 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		299430472A15689600D06A58 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		3AF153E52437106642CA448F /* Pods_DriverTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DriverTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4414D799539C3F8D77D0DCC3 /* Pods-DriverTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DriverTests.debug.xcconfig"; path = "Target Support Files/Pods-DriverTests/Pods-DriverTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70D54BB878FA08497F426A53 /* Pods_Driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -373,7 +373,7 @@
 		BABA271A29FE7E3C0052B52E /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				299430472A15689600D06A58 /* UserDefaultsManager.swift */,
+				299430472A15689600D06A58 /* TokenManager.swift */,
 				BABA271B29FE7E3C0052B52E /* ApplicationStateManager.swift */,
 				BABA271C29FE7E3C0052B52E /* Location */,
 			);
@@ -784,7 +784,7 @@
 				BABA276529FE7E3D0052B52E /* Model.swift in Sources */,
 				BAE789342A08029600017FF5 /* Token.swift in Sources */,
 				BABA274D29FE7E3C0052B52E /* LoginViewContracts.swift in Sources */,
-				299430482A15689600D06A58 /* UserDefaultsManager.swift in Sources */,
+				299430482A15689600D06A58 /* TokenManager.swift in Sources */,
 				BAE789312A07FFC500017FF5 /* HTTPHeader.swift in Sources */,
 				BABA274C29FE7E3C0052B52E /* HomeViewProtocols.swift in Sources */,
 				BABA276C29FE7E3D0052B52E /* CustomXibView.swift in Sources */,
