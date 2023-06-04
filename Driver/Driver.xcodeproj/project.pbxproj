@@ -12,76 +12,58 @@
 		95DC687129A3BCF90045CC4F /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687029A3BCF90045CC4F /* DriverTests.swift */; };
 		95DC687B29A3BCF90045CC4F /* DriverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687A29A3BCF90045CC4F /* DriverUITests.swift */; };
 		95DC687D29A3BCF90045CC4F /* DriverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DC687C29A3BCF90045CC4F /* DriverUITestsLaunchTests.swift */; };
-		BABA27DC2A00588D0052B52E /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA277F2A00588C0052B52E /* SettingsViewModel.swift */; };
-		BABA27DD2A00588D0052B52E /* SettingsViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27802A00588C0052B52E /* SettingsViewBuilder.swift */; };
-		BABA27DE2A00588D0052B52E /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27812A00588C0052B52E /* SettingsProtocols.swift */; };
-		BABA27DF2A00588D0052B52E /* SettingsViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27822A00588C0052B52E /* SettingsViewRouter.swift */; };
-		BABA27E02A00588D0052B52E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA27832A00588C0052B52E /* SettingsViewController.xib */; };
-		BABA27E12A00588D0052B52E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27842A00588C0052B52E /* SettingsViewController.swift */; };
-		BABA27E22A00588D0052B52E /* MessagesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27862A00588C0052B52E /* MessagesProtocols.swift */; };
-		BABA27E32A00588D0052B52E /* MessagesViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27872A00588C0052B52E /* MessagesViewBuilder.swift */; };
-		BABA27E42A00588D0052B52E /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27882A00588C0052B52E /* MessagesViewModel.swift */; };
-		BABA27E52A00588D0052B52E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27892A00588C0052B52E /* MessagesViewController.swift */; };
-		BABA27E62A00588D0052B52E /* MessagesViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA278A2A00588C0052B52E /* MessagesViewRouter.swift */; };
-		BABA27E72A00588D0052B52E /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA278B2A00588C0052B52E /* MessagesViewController.xib */; };
-		BABA27E82A00588D0052B52E /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA278D2A00588C0052B52E /* SplashScreenRouter.swift */; };
-		BABA27E92A00588D0052B52E /* SplashScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA278E2A00588C0052B52E /* SplashScreenBuilder.swift */; };
-		BABA27EA2A00588D0052B52E /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA278F2A00588C0052B52E /* SplashScreenProtocols.swift */; };
-		BABA27EB2A00588D0052B52E /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27902A00588C0052B52E /* SplashScreenViewModel.swift */; };
-		BABA27EC2A00588D0052B52E /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA27922A00588C0052B52E /* SplashScreenViewController.xib */; };
-		BABA27ED2A00588D0052B52E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27932A00588C0052B52E /* SplashScreenViewController.swift */; };
-		BABA27EE2A00588D0052B52E /* LoginViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27952A00588C0052B52E /* LoginViewContracts.swift */; };
-		BABA27EF2A00588D0052B52E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27962A00588C0052B52E /* LoginViewModel.swift */; };
-		BABA27F02A00588D0052B52E /* LoginViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27972A00588C0052B52E /* LoginViewBuilder.swift */; };
-		BABA27F12A00588D0052B52E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA27992A00588C0052B52E /* LoginViewController.xib */; };
-		BABA27F22A00588D0052B52E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA279A2A00588C0052B52E /* LoginViewController.swift */; };
-		BABA27F32A00588D0052B52E /* LoginViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA279B2A00588C0052B52E /* LoginViewRouter.swift */; };
-		BABA27F42A00588D0052B52E /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA279D2A00588C0052B52E /* TabBarController.xib */; };
-		BABA27F52A00588D0052B52E /* TabBarTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA279E2A00588C0052B52E /* TabBarTransition.swift */; };
-		BABA27F62A00588D0052B52E /* TabBarControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA279F2A00588C0052B52E /* TabBarControllerBuilder.swift */; };
-		BABA27F72A00588D0052B52E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27A02A00588C0052B52E /* TabBarView.swift */; };
-		BABA27F82A00588D0052B52E /* TabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA27A12A00588C0052B52E /* TabBarView.xib */; };
-		BABA27F92A00588D0052B52E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27A22A00588C0052B52E /* TabBarController.swift */; };
-		BABA27FA2A00588D0052B52E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27A42A00588C0052B52E /* HomeViewModel.swift */; };
-		BABA27FB2A00588D0052B52E /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27A52A00588C0052B52E /* HomeViewBuilder.swift */; };
-		BABA27FC2A00588D0052B52E /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27A62A00588C0052B52E /* HomeViewRouter.swift */; };
-		BABA27FD2A00588D0052B52E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA27A82A00588C0052B52E /* HomeViewController.xib */; };
-		BABA27FE2A00588D0052B52E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27A92A00588C0052B52E /* HomeViewController.swift */; };
-		BABA27FF2A00588D0052B52E /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27AA2A00588C0052B52E /* HomeViewProtocols.swift */; };
-		BABA28002A00588D0052B52E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27AC2A00588C0052B52E /* UIImageView+Extension.swift */; };
-		BABA28012A00588D0052B52E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27AD2A00588C0052B52E /* UIColor+Extension.swift */; };
-		BABA28022A00588D0052B52E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27AE2A00588C0052B52E /* UIView+Extension.swift */; };
-		BABA28032A00588D0052B52E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27AF2A00588C0052B52E /* Reusable.swift */; };
-		BABA28042A00588D0052B52E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27B02A00588C0052B52E /* UIViewController+Extension.swift */; };
-		BABA28052A00588D0052B52E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27B22A00588C0052B52E /* AppRouter.swift */; };
-		BABA28062A00588D0052B52E /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27B32A00588C0052B52E /* AppContainer.swift */; };
-		BABA28072A00588D0052B52E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27B42A00588C0052B52E /* AppDelegate.swift */; };
-		BABA28082A00588D0052B52E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27B52A00588C0052B52E /* SceneDelegate.swift */; };
-		BABA28092A00588D0052B52E /* ApplicationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27B72A00588C0052B52E /* ApplicationStateManager.swift */; };
-		BABA280A2A00588D0052B52E /* LocationTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27B92A00588C0052B52E /* LocationTrackable.swift */; };
-		BABA280B2A00588D0052B52E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27BA2A00588C0052B52E /* LocationManager.swift */; };
-		BABA280C2A00588D0052B52E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27BD2A00588C0052B52E /* Environment.swift */; };
-		BABA280D2A00588D0052B52E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27C02A00588C0052B52E /* Request.swift */; };
-		BABA280E2A00588D0052B52E /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27C22A00588C0052B52E /* RequestBuilder.swift */; };
-		BABA280F2A00588D0052B52E /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27C32A00588C0052B52E /* Builder.swift */; };
-		BABA28102A00588D0052B52E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27C42A00588C0052B52E /* Endpoint.swift */; };
-		BABA28112A00588D0052B52E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27C62A00588C0052B52E /* APIError.swift */; };
-		BABA28122A00588D0052B52E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27C72A00588C0052B52E /* Model.swift */; };
-		BABA28132A00588D0052B52E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27C82A00588C0052B52E /* APIClient.swift */; };
-		BABA28142A00588D0052B52E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BABA27CA2A00588C0052B52E /* Settings.bundle */; };
-		BABA28152A00588D0052B52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA27CB2A00588C0052B52E /* Assets.xcassets */; };
-		BABA28162A00588D0052B52E /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA27CC2A00588C0052B52E /* Color.xcassets */; };
-		BABA28172A00588D0052B52E /* LocalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27CE2A00588C0052B52E /* LocalError.swift */; };
-		BABA28182A00588D0052B52E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27CF2A00588C0052B52E /* BaseViewController.swift */; };
-		BABA28192A00588D0052B52E /* CustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D02A00588C0052B52E /* CustomXibView.swift */; };
-		BABA281A2A00588D0052B52E /* DriverLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D12A00588C0052B52E /* DriverLog.swift */; };
-		BABA281B2A00588D0052B52E /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D22A00588C0052B52E /* GenericError.swift */; };
-		BABA281C2A00588D0052B52E /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D32A00588C0052B52E /* AlertType.swift */; };
-		BABA281D2A00588D0052B52E /* CustomReusableButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA27D52A00588C0052B52E /* CustomReusableButtonView.xib */; };
-		BABA281E2A00588D0052B52E /* CustomReusableButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D62A00588C0052B52E /* CustomReusableButtonView.swift */; };
-		BABA281F2A00588D0052B52E /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D82A00588C0052B52E /* JailbreakChecker.swift */; };
-		BABA28202A00588D0052B52E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27D92A00588C0052B52E /* Animator.swift */; };
-		BABA28212A00588D0052B52E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA27DA2A00588C0052B52E /* AppEnvironment.swift */; };
+		BABA274129FE7E3C0052B52E /* SplashScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26F829FE7E3C0052B52E /* SplashScreenRouter.swift */; };
+		BABA274229FE7E3C0052B52E /* SplashScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26F929FE7E3C0052B52E /* SplashScreenBuilder.swift */; };
+		BABA274329FE7E3C0052B52E /* SplashScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26FA29FE7E3C0052B52E /* SplashScreenProtocols.swift */; };
+		BABA274429FE7E3C0052B52E /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26FB29FE7E3C0052B52E /* SplashScreenViewModel.swift */; };
+		BABA274529FE7E3C0052B52E /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA26FD29FE7E3C0052B52E /* SplashScreenViewController.xib */; };
+		BABA274629FE7E3C0052B52E /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA26FE29FE7E3C0052B52E /* SplashScreenViewController.swift */; };
+		BABA274729FE7E3C0052B52E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270029FE7E3C0052B52E /* HomeViewModel.swift */; };
+		BABA274829FE7E3C0052B52E /* HomeViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270129FE7E3C0052B52E /* HomeViewBuilder.swift */; };
+		BABA274929FE7E3C0052B52E /* HomeViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270229FE7E3C0052B52E /* HomeViewRouter.swift */; };
+		BABA274A29FE7E3C0052B52E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA270429FE7E3C0052B52E /* HomeViewController.xib */; };
+		BABA274B29FE7E3C0052B52E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270529FE7E3C0052B52E /* HomeViewController.swift */; };
+		BABA274C29FE7E3C0052B52E /* HomeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270629FE7E3C0052B52E /* HomeViewProtocols.swift */; };
+		BABA274D29FE7E3C0052B52E /* LoginViewContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270829FE7E3C0052B52E /* LoginViewContracts.swift */; };
+		BABA274E29FE7E3C0052B52E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270929FE7E3C0052B52E /* LoginViewModel.swift */; };
+		BABA274F29FE7E3C0052B52E /* LoginViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270A29FE7E3C0052B52E /* LoginViewBuilder.swift */; };
+		BABA275029FE7E3C0052B52E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA270C29FE7E3C0052B52E /* LoginViewController.xib */; };
+		BABA275129FE7E3C0052B52E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270D29FE7E3C0052B52E /* LoginViewController.swift */; };
+		BABA275229FE7E3C0052B52E /* LoginViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA270E29FE7E3C0052B52E /* LoginViewRouter.swift */; };
+		BABA275329FE7E3C0052B52E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271029FE7E3C0052B52E /* UIImageView+Extension.swift */; };
+		BABA275429FE7E3C0052B52E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271129FE7E3C0052B52E /* UIColor+Extension.swift */; };
+		BABA275529FE7E3C0052B52E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271229FE7E3C0052B52E /* UIView+Extension.swift */; };
+		BABA275629FE7E3C0052B52E /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271329FE7E3C0052B52E /* Reusable.swift */; };
+		BABA275729FE7E3C0052B52E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271429FE7E3C0052B52E /* UIViewController+Extension.swift */; };
+		BABA275829FE7E3C0052B52E /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271629FE7E3C0052B52E /* AppRouter.swift */; };
+		BABA275929FE7E3C0052B52E /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271729FE7E3C0052B52E /* AppContainer.swift */; };
+		BABA275A29FE7E3C0052B52E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271829FE7E3C0052B52E /* AppDelegate.swift */; };
+		BABA275B29FE7E3C0052B52E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271929FE7E3C0052B52E /* SceneDelegate.swift */; };
+		BABA275C29FE7E3D0052B52E /* ApplicationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271B29FE7E3C0052B52E /* ApplicationStateManager.swift */; };
+		BABA275D29FE7E3D0052B52E /* LocationTrackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271D29FE7E3C0052B52E /* LocationTrackable.swift */; };
+		BABA275E29FE7E3D0052B52E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA271E29FE7E3C0052B52E /* LocationManager.swift */; };
+		BABA275F29FE7E3D0052B52E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272129FE7E3C0052B52E /* Environment.swift */; };
+		BABA276029FE7E3D0052B52E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272429FE7E3C0052B52E /* Request.swift */; };
+		BABA276129FE7E3D0052B52E /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272629FE7E3C0052B52E /* RequestBuilder.swift */; };
+		BABA276229FE7E3D0052B52E /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272729FE7E3C0052B52E /* Builder.swift */; };
+		BABA276329FE7E3D0052B52E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272829FE7E3C0052B52E /* Endpoint.swift */; };
+		BABA276429FE7E3D0052B52E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272A29FE7E3C0052B52E /* APIError.swift */; };
+		BABA276529FE7E3D0052B52E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272B29FE7E3C0052B52E /* Model.swift */; };
+		BABA276629FE7E3D0052B52E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA272C29FE7E3C0052B52E /* APIClient.swift */; };
+		BABA276729FE7E3D0052B52E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BABA272E29FE7E3C0052B52E /* Settings.bundle */; };
+		BABA276829FE7E3D0052B52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA272F29FE7E3C0052B52E /* Assets.xcassets */; };
+		BABA276929FE7E3D0052B52E /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABA273029FE7E3C0052B52E /* Color.xcassets */; };
+		BABA276A29FE7E3D0052B52E /* LocalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273329FE7E3C0052B52E /* LocalError.swift */; };
+		BABA276B29FE7E3D0052B52E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273429FE7E3C0052B52E /* BaseViewController.swift */; };
+		BABA276C29FE7E3D0052B52E /* CustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273529FE7E3C0052B52E /* CustomXibView.swift */; };
+		BABA276D29FE7E3D0052B52E /* DriverLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273629FE7E3C0052B52E /* DriverLog.swift */; };
+		BABA276E29FE7E3D0052B52E /* GenericError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273729FE7E3C0052B52E /* GenericError.swift */; };
+		BABA276F29FE7E3D0052B52E /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273829FE7E3C0052B52E /* AlertType.swift */; };
+		BABA277029FE7E3D0052B52E /* CustomReusableButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABA273A29FE7E3C0052B52E /* CustomReusableButtonView.xib */; };
+		BABA277129FE7E3D0052B52E /* CustomReusableButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273B29FE7E3C0052B52E /* CustomReusableButtonView.swift */; };
+		BABA277229FE7E3D0052B52E /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273D29FE7E3C0052B52E /* JailbreakChecker.swift */; };
+		BABA277329FE7E3D0052B52E /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273E29FE7E3C0052B52E /* Animator.swift */; };
+		BABA277429FE7E3D0052B52E /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABA273F29FE7E3C0052B52E /* AppEnvironment.swift */; };
 		F20CB9792D739A0D9209C8E1 /* Pods_Driver_DriverUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984F3B9FE102B6D82E54A7E7 /* Pods_Driver_DriverUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -284,16 +266,17 @@
 		BABA277C2A00588C0052B52E /* Driver */ = {
 			isa = PBXGroup;
 			children = (
-				BABA277D2A00588C0052B52E /* Scenes */,
-				BABA27AB2A00588C0052B52E /* Extension */,
-				BABA27B12A00588C0052B52E /* App */,
-				BABA27B62A00588C0052B52E /* Util */,
-				BABA27BB2A00588C0052B52E /* Networking */,
-				BABA27C92A00588C0052B52E /* Resources */,
-				BABA27CD2A00588C0052B52E /* Custom */,
-				BABA27D42A00588C0052B52E /* Views */,
-				BABA27D72A00588C0052B52E /* Helper */,
-				BABA27DB2A00588C0052B52E /* Info.plist */,
+
+				BABA26F629FE7E3C0052B52E /* Scenes */,
+				BABA270F29FE7E3C0052B52E /* Extension */,
+				BABA271529FE7E3C0052B52E /* App */,
+				BABA271A29FE7E3C0052B52E /* Util */,
+				BABA271F29FE7E3C0052B52E /* Networking */,
+				BABA272D29FE7E3C0052B52E /* Resources */,
+				BABA273229FE7E3C0052B52E /* Custom */,
+				BABA273929FE7E3C0052B52E /* Views */,
+				BABA273C29FE7E3C0052B52E /* Helper */,
+				BABA274029FE7E3C0052B52E /* Info.plist */,
 			);
 			path = Driver;
 			sourceTree = "<group>";
@@ -519,7 +502,8 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		BABA27CD2A00588C0052B52E /* Custom */ = {
+
+		BABA273229FE7E3C0052B52E /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				BABA27CE2A00588C0052B52E /* LocalError.swift */,
@@ -660,17 +644,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABA28142A00588D0052B52E /* Settings.bundle in Resources */,
-				BABA27F82A00588D0052B52E /* TabBarView.xib in Resources */,
-				BABA27F12A00588D0052B52E /* LoginViewController.xib in Resources */,
-				BABA27EC2A00588D0052B52E /* SplashScreenViewController.xib in Resources */,
-				BABA27F42A00588D0052B52E /* TabBarController.xib in Resources */,
-				BABA27E72A00588D0052B52E /* MessagesViewController.xib in Resources */,
-				BABA27FD2A00588D0052B52E /* HomeViewController.xib in Resources */,
-				BABA28162A00588D0052B52E /* Color.xcassets in Resources */,
-				BABA281D2A00588D0052B52E /* CustomReusableButtonView.xib in Resources */,
-				BABA28152A00588D0052B52E /* Assets.xcassets in Resources */,
-				BABA27E02A00588D0052B52E /* SettingsViewController.xib in Resources */,
+				BABA277029FE7E3D0052B52E /* CustomReusableButtonView.xib in Resources */,
+				BABA276729FE7E3D0052B52E /* Settings.bundle in Resources */,
+				BABA274529FE7E3C0052B52E /* SplashScreenViewController.xib in Resources */,
+				BABA274A29FE7E3C0052B52E /* HomeViewController.xib in Resources */,
+				BABA275029FE7E3C0052B52E /* LoginViewController.xib in Resources */,
+				BABA276829FE7E3D0052B52E /* Assets.xcassets in Resources */,
+				BABA276929FE7E3D0052B52E /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
