@@ -1,5 +1,5 @@
 PODS:
-  - Kingfisher (7.6.1)
+  - Kingfisher (7.8.1)
   - SwiftyNotifications (0.7.1)
 
 DEPENDENCIES:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SwiftyNotifications
 
 SPEC CHECKSUMS:
-  Kingfisher: 93a3c6d0d551658a31e19f21747e1d15cb39d525
+  Kingfisher: 63f677311d36a3473f6b978584f8a3845d023dc5
   SwiftyNotifications: 37210c87050e42f22f4ff85af9528397f03ee5b9
 
 PODFILE CHECKSUM: 1ac42a68b6663a2b4f8c7867846330379677c1bf
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

@@ -66,8 +66,6 @@
 		2963814C2A2CEE0100C85E57 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 296380FF2A2CEE0100C85E57 /* Settings.bundle */; };
 		2963814D2A2CEE0100C85E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296381002A2CEE0100C85E57 /* Assets.xcassets */; };
 		2963814E2A2CEE0100C85E57 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296381012A2CEE0100C85E57 /* Color.xcassets */; };
-		2963814F2A2CEE0100C85E57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296381022A2CEE0100C85E57 /* Assets.xcassets */; };
-		296381502A2CEE0100C85E57 /* Assets.xcassets 21-27-45-448.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296381042A2CEE0100C85E57 /* Assets.xcassets 21-27-45-448.xcassets */; };
 		296381512A2CEE0100C85E57 /* LocalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296381062A2CEE0100C85E57 /* LocalError.swift */; };
 		296381522A2CEE0100C85E57 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296381072A2CEE0100C85E57 /* BaseViewController.swift */; };
 		296381532A2CEE0100C85E57 /* CustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296381082A2CEE0100C85E57 /* CustomXibView.swift */; };
@@ -171,8 +169,6 @@
 		296380FF2A2CEE0100C85E57 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		296381002A2CEE0100C85E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		296381012A2CEE0100C85E57 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
-		296381022A2CEE0100C85E57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		296381042A2CEE0100C85E57 /* Assets.xcassets 21-27-45-448.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets 21-27-45-448.xcassets"; sourceTree = "<group>"; };
 		296381062A2CEE0100C85E57 /* LocalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalError.swift; sourceTree = "<group>"; };
 		296381072A2CEE0100C85E57 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		296381082A2CEE0100C85E57 /* CustomXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomXibView.swift; sourceTree = "<group>"; };
@@ -237,12 +233,8 @@
 				296380DE2A2CEE0100C85E57 /* Extension */,
 				296380E42A2CEE0100C85E57 /* App */,
 				296380EA2A2CEE0100C85E57 /* Util */,
-				296380EF2A2CEE0100C85E57 /* Extenison 21-27-18-636 */,
 				296380F02A2CEE0100C85E57 /* Networking */,
 				296380FE2A2CEE0100C85E57 /* Resources */,
-				296381022A2CEE0100C85E57 /* Assets.xcassets */,
-				296381032A2CEE0100C85E57 /* Extenison 06.17.38 */,
-				296381042A2CEE0100C85E57 /* Assets.xcassets 21-27-45-448.xcassets */,
 				296381052A2CEE0100C85E57 /* Custom */,
 				2963810C2A2CEE0100C85E57 /* Views */,
 				2963810F2A2CEE0100C85E57 /* Helper */,
@@ -407,18 +399,10 @@
 			children = (
 				296380E52A2CEE0100C85E57 /* AppRouter.swift */,
 				296380E62A2CEE0100C85E57 /* AppContainer.swift */,
-				296380E72A2CEE0100C85E57 /* New Group */,
 				296380E82A2CEE0100C85E57 /* AppDelegate.swift */,
 				296380E92A2CEE0100C85E57 /* SceneDelegate.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		296380E72A2CEE0100C85E57 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		296380EA2A2CEE0100C85E57 /* Util */ = {
@@ -437,13 +421,6 @@
 				296380EE2A2CEE0100C85E57 /* LocationManager.swift */,
 			);
 			path = Location;
-			sourceTree = "<group>";
-		};
-		296380EF2A2CEE0100C85E57 /* Extenison 21-27-18-636 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Extenison 21-27-18-636";
 			sourceTree = "<group>";
 		};
 		296380F02A2CEE0100C85E57 /* Networking */ = {
@@ -509,13 +486,6 @@
 				296381012A2CEE0100C85E57 /* Color.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		296381032A2CEE0100C85E57 /* Extenison 06.17.38 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Extenison 06.17.38";
 			sourceTree = "<group>";
 		};
 		296381052A2CEE0100C85E57 /* Custom */ = {
@@ -730,7 +700,6 @@
 				BABA276729FE7E3D0052B52E /* (null) in Resources */,
 				2963814E2A2CEE0100C85E57 /* Color.xcassets in Resources */,
 				2963814C2A2CEE0100C85E57 /* Settings.bundle in Resources */,
-				296381502A2CEE0100C85E57 /* Assets.xcassets 21-27-45-448.xcassets in Resources */,
 				296381242A2CEE0100C85E57 /* SplashScreenViewController.xib in Resources */,
 				BABA274529FE7E3C0052B52E /* (null) in Resources */,
 				296381182A2CEE0100C85E57 /* SettingsViewController.xib in Resources */,
@@ -739,7 +708,6 @@
 				BABA275029FE7E3C0052B52E /* (null) in Resources */,
 				BABA276829FE7E3D0052B52E /* (null) in Resources */,
 				2963814D2A2CEE0100C85E57 /* Assets.xcassets in Resources */,
-				2963814F2A2CEE0100C85E57 /* Assets.xcassets in Resources */,
 				BABA276929FE7E3D0052B52E /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
