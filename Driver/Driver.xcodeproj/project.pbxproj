@@ -250,9 +250,6 @@
 				296380B52A2CEE0100C85E57 /* MessagesScene */,
 				296380BC2A2CEE0100C85E57 /* SplashScene */,
 				296380C42A2CEE0100C85E57 /* LoginScene */,
-				296380CC2A2CEE0100C85E57 /* New Group */,
-				296380CD2A2CEE0100C85E57 /* LoginScreen */,
-				296380CE2A2CEE0100C85E57 /* LoginView */,
 				296380CF2A2CEE0100C85E57 /* TabBarController */,
 				296380D62A2CEE0100C85E57 /* HomeScene */,
 			);
@@ -325,27 +322,6 @@
 				296380CA2A2CEE0100C85E57 /* LoginViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		296380CC2A2CEE0100C85E57 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		296380CD2A2CEE0100C85E57 /* LoginScreen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginScreen;
-			sourceTree = "<group>";
-		};
-		296380CE2A2CEE0100C85E57 /* LoginView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginView;
 			sourceTree = "<group>";
 		};
 		296380CF2A2CEE0100C85E57 /* TabBarController */ = {

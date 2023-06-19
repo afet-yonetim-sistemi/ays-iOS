@@ -11,6 +11,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="Driver" customModuleProvider="target">
             <connections>
+                <outlet property="deleteAccountButton" destination="6Zh-db-KTA" id="jzl-fz-bYh"/>
+                <outlet property="feedbackButton" destination="IsJ-B5-3rs" id="cZo-Ph-Nmo"/>
+                <outlet property="finalAddressLabel" destination="leA-Bi-q0Z" id="hOQ-dh-Y8h"/>
+                <outlet property="initialAddressLabel" destination="Yb3-Hf-8LQ" id="6Hu-LN-wGQ"/>
+                <outlet property="loadLabel" destination="HjC-wK-gkB" id="3w3-Gb-bBD"/>
+                <outlet property="logoutButton" destination="0bp-yb-iH5" id="Vfd-W7-y6f"/>
+                <outlet property="nameLabel" destination="a0I-kb-YyR" id="Qci-gE-OcH"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,14 +25,77 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İsim Soyisim" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0I-kb-YyR">
+                    <rect key="frame" x="149.66666666666666" y="91" width="94" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iLh-ib-ywg">
+                    <rect key="frame" x="16" y="143.33333333333334" width="361" height="197.00000000000003"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taşınacak Bilgisi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HjC-wK-gkB">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Başlangıç Adresi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yb3-Hf-8LQ">
+                            <rect key="frame" x="0.0" y="88.333333333333314" width="361" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Varış Adresi:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="leA-Bi-q0Z">
+                            <rect key="frame" x="0.0" y="176.66666666666666" width="361" height="20.333333333333343"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="PJg-IL-UaV">
+                    <rect key="frame" x="16" y="404.33333333333331" width="361" height="134.99999999999994"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsJ-B5-3rs">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="34.333333333333336"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Geri Bildirim Yolla"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zh-db-KTA">
+                            <rect key="frame" x="0.0" y="50.333333333333371" width="361" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Hesap Sil"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bp-yb-iH5">
+                            <rect key="frame" x="0.0" y="100.66666666666669" width="361" height="34.333333333333343"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Çıkış Yap"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemOrangeColor"/>
-            <point key="canvasLocation" x="50" y="-12"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="iLh-ib-ywg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="4nS-LL-j4b"/>
+                <constraint firstItem="iLh-ib-ywg" firstAttribute="top" secondItem="a0I-kb-YyR" secondAttribute="bottom" constant="32" id="59h-1z-vk9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iLh-ib-ywg" secondAttribute="trailing" constant="16" id="SlX-36-N5L"/>
+                <constraint firstItem="PJg-IL-UaV" firstAttribute="leading" secondItem="iLh-ib-ywg" secondAttribute="leading" id="deF-xY-EDi"/>
+                <constraint firstItem="PJg-IL-UaV" firstAttribute="top" secondItem="iLh-ib-ywg" secondAttribute="bottom" constant="64" id="isr-YP-hTa"/>
+                <constraint firstItem="PJg-IL-UaV" firstAttribute="trailing" secondItem="iLh-ib-ywg" secondAttribute="trailing" id="lyQ-J3-u7z"/>
+                <constraint firstItem="a0I-kb-YyR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pwo-ti-Xlf"/>
+                <constraint firstItem="a0I-kb-YyR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="rdy-eE-miE"/>
+            </constraints>
+            <point key="canvasLocation" x="49.618320610687022" y="-12.67605633802817"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
