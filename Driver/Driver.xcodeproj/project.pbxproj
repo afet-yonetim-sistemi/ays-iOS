@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297CBB092A40F9A100F1FD4D /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297CBB082A40F9A100F1FD4D /* Session.swift */; };
+		297CBB0B2A40FB6200F1FD4D /* TokenDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297CBB0A2A40FB6200F1FD4D /* TokenDataManager.swift */; };
 		299430442A15678100D06A58 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299430432A15678100D06A58 /* ServiceResponse.swift */; };
 		299430462A15679900D06A58 /* AuthBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299430452A15679900D06A58 /* AuthBody.swift */; };
 		299430482A15689600D06A58 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299430472A15689600D06A58 /* TokenManager.swift */; };
@@ -91,6 +93,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		297CBB082A40F9A100F1FD4D /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		297CBB0A2A40FB6200F1FD4D /* TokenDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenDataManager.swift; sourceTree = "<group>"; };
 		299430432A15678100D06A58 /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
 		299430452A15679900D06A58 /* AuthBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBody.swift; sourceTree = "<group>"; };
 		299430472A15689600D06A58 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
@@ -374,6 +378,8 @@
 			isa = PBXGroup;
 			children = (
 				299430472A15689600D06A58 /* TokenManager.swift */,
+				297CBB082A40F9A100F1FD4D /* Session.swift */,
+				297CBB0A2A40FB6200F1FD4D /* TokenDataManager.swift */,
 				BABA271B29FE7E3C0052B52E /* ApplicationStateManager.swift */,
 				BABA271C29FE7E3C0052B52E /* Location */,
 			);
@@ -762,6 +768,7 @@
 				BABA274B29FE7E3C0052B52E /* HomeViewController.swift in Sources */,
 				BABA274129FE7E3C0052B52E /* SplashScreenRouter.swift in Sources */,
 				299430462A15679900D06A58 /* AuthBody.swift in Sources */,
+				297CBB092A40F9A100F1FD4D /* Session.swift in Sources */,
 				BABA275829FE7E3C0052B52E /* AppRouter.swift in Sources */,
 				BAE7892F2A07F73600017FF5 /* APIManager.swift in Sources */,
 				BABA277329FE7E3D0052B52E /* Animator.swift in Sources */,
@@ -775,6 +782,7 @@
 				BABA274329FE7E3C0052B52E /* SplashScreenProtocols.swift in Sources */,
 				BABA275929FE7E3C0052B52E /* AppContainer.swift in Sources */,
 				BABA275229FE7E3C0052B52E /* LoginViewRouter.swift in Sources */,
+				297CBB0B2A40FB6200F1FD4D /* TokenDataManager.swift in Sources */,
 				BABA275D29FE7E3D0052B52E /* LocationTrackable.swift in Sources */,
 				BABA276E29FE7E3D0052B52E /* GenericError.swift in Sources */,
 				BABA276229FE7E3D0052B52E /* Builder.swift in Sources */,

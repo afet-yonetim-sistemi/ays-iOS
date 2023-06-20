@@ -3,10 +3,18 @@
 <plist version="1.0">
 <dict>
     <key>NSAppTransportSecurity</key>
-      <dict>
-          <key>NSAllowsArbitraryLoads</key>
-          <true/>
-      </dict>
+         <dict>
+             <key>NSExceptionDomains</key>
+             <dict>
+                 <key>ec2-18-159-211-214.eu-central-1.compute.amazonaws.com</key>
+                 <dict>
+                     <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                     <true/>
+                     <key>NSIncludesSubdomains</key>
+                     <true/>
+                 </dict>
+             </dict>
+         </dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -23,6 +23,10 @@ final class LoginViewModel: LoginViewModelProtocol{
         if let userName, let password, !userName.isEmpty, !password.isEmpty {
             apiManager.login(username: userName, password: password, success: { [weak self] in
                 guard let self else { return }
+                if let token = TokenManager.getAccessToken()?.token {
+                    let jwtDecodedDict = TokenDataManager.decode(jwtToken: token)
+                    Session.saveSessionData(dict: jwtDecodedDict)
+                }
                 self.delegate?.handleOutput(.setSpinner(isLoading: false))
                 self.delegate?.handleOutput(.loginSuccesfully)
             }, fail: { [weak self] error  in
