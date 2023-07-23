@@ -17,7 +17,7 @@ final class SplashScreenViewController: BaseViewController {
     // MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.getSomeData()
+        viewModel.getToken()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -33,11 +33,6 @@ extension SplashScreenViewController: SplashScreenViewDelegate {
     ///  Handle output return from view model
     /// - Parameter output: Splash Screen View Model Output
     func handleOutput(_ output: SplashScreenViewModelOutput) {
-        switch output {
-        case .returnData(let someData):
-            if let data = someData as? String {
-                viewModel.nextPage()
-            }
-        }
+      
     }
 }
