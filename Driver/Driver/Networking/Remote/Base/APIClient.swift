@@ -9,6 +9,7 @@ import Foundation
 /// This is an enum to define HTTP method that is needed when request to the web service.
 enum HTTPMethod: String {
     case get
+    case post
 }
 /// This is a struct that contains a session during the handshaking.
 struct APIClient {

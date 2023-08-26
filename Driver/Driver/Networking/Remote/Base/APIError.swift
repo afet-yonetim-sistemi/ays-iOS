@@ -11,13 +11,14 @@ import Foundation
 enum APIError: Error {
     case unknownResponse
     case serverError(Int)
+    case encodingError
     case decodingError(DecodingError)
     case networkError(Error)
     case unhandledResponse
 
     var message: String {
         switch self {
-        case .decodingError: return "Geliştirici ile iletişime geçiniz."
+        case .decodingError, .encodingError: return "Geliştirici ile iletişime geçiniz."
         case .serverError: return "Servis hatası. Lütfen daha sonra tekrar deneyiniz."
         case .unknownResponse, .unhandledResponse: return "Bilinmeyen bir hata ile karşılaşıldı. Lütfen sonra tekrar deneyiniz."
         case .networkError(let error): return error.localizedDescription

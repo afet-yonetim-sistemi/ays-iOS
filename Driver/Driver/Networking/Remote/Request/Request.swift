@@ -34,14 +34,17 @@ struct Request {
     static func get(method: HTTPMethod = .get,
                     path: String,
                     queryItems: [URLQueryItem]?,
+                    headers: [HTTPHeader]?,
+                    body: Data? = nil,
                     completion: @escaping (Result<Data, APIError>) -> Void) -> Request {
         let builder = GetRequestBuilder(method: method,
+                                        headers: headers,
+                                        body: body,
                                         endpoint: Endpoint(path: path,
                                                            queryItems: queryItems ?? nil))
         return Request(builder: builder, completion: completion)
     }
     
-    #warning("Tolga: I will add post request after the web service is defined.")
 }
 
 /**

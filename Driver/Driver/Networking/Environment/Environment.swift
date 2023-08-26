@@ -11,3 +11,4 @@ struct Environment {
     var scheme: String = AppEnvironment.scheme
     var host: String = AppEnvironment.host
 }
+

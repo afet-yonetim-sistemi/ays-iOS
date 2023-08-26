@@ -9,6 +9,9 @@ import Foundation
 
 struct GetRequestBuilder: RequestBuilder {
     var method: HTTPMethod
+    var headers: [HTTPHeader]?
+    var body: Data?
     var endpoint: Endpoint
+    
 }
 

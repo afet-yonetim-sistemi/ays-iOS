@@ -8,6 +8,7 @@
 import Foundation
 
 let appContainer = AppContainer()
+let apiManager = APIManager()
 
 final class AppContainer {
     let router = AppRouter()
