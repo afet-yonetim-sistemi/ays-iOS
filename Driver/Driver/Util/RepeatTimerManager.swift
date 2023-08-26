@@ -14,7 +14,7 @@ protocol RepeatTimerManagerDelegate: AnyObject {
 /// This is a class to manage Timer
 /// Use singleton pattern to reach active timer whenever want
 /// For understand to working logic please examine flow charts
-class RepeatTimerManager: NSObject {
+final class RepeatTimerManager {
     enum TimerCondition {
         case resume
         case stop
@@ -23,10 +23,12 @@ class RepeatTimerManager: NSObject {
     private var timer: Timer?
     private var timeInterval: Double = 15
     private var timerCondition: TimerCondition = .stop
-    weak var delegate: RepeatTimerManagerDelegate?
-    static let shared = RepeatTimerManager()
+    private weak var delegate: RepeatTimerManagerDelegate?
+    
     // MARK: - Init
-    private override init() { }
+    private init(delegate: RepeatTimerManagerDelegate?) {
+        self.delegate = delegate
+         }
     
     // MARK: - Functions
     /**
